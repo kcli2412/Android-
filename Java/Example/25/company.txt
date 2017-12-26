@@ -1,0 +1,57 @@
+package com;
+
+public class company {
+	private String name;
+	private int x;//¤Ø
+	private int y;//µ§
+	private int sum;
+	
+	public company(String name,int  x, int y)
+	{
+		this.name=name;
+		this.x=x;
+		this.y=y;
+		sum=x*39+y*28;
+		
+		if(sum>=2000) sum=(int)(sum*0.9);
+		
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+		sum=x*39+y*28;
+		
+		if(sum>=2000) sum=(int)(sum*0.9);
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+		sum=x*39+y*28;
+		
+		if(sum>=2000) sum=(int)(sum*0.9);
+	}
+
+	public int getSum() {
+		return sum;
+	}
+	
+	
+	
+
+}

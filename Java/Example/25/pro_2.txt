@@ -1,0 +1,28 @@
+package com;
+
+public class pro_2 extends company{
+	
+	private int z;//30
+	
+	public pro_2(String name,int x, int y, int z)
+	{
+		super(name,x, y);
+		this.z=z;
+	}
+
+	public int getZ() {
+		return z;
+	}
+
+	public void setZ(int z) {
+		this.z = z;
+	}
+	
+	public int getSum()
+	{
+		return super.getSum()+z*30;
+	}
+	
+	
+
+}

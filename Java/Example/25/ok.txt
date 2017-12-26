@@ -1,0 +1,93 @@
+<%@ page language="java" contentType="text/html; charset=BIG5"
+    pageEncoding="BIG5"
+    import="com.company"
+    import="com.pro_2"
+    import="java.sql.Connection"
+    import="java.sql.DriverManager"
+    import="java.sql.PreparedStatement"
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<title>Insert title here</title>
+</head>
+<%
+	
+	request.setCharacterEncoding("BIG5");
+	String name=request.getParameter("name");
+	int x=Integer.parseInt(request.getParameter("X"));
+	int y=Integer.parseInt(request.getParameter("Y"));
+	
+	company a=new company(name,x,y);
+	
+%>
+<%
+	String url="jdbc:mysql://localhost:3305/company";
+	String user="root";
+	String password="1234";
+	String sql="insert into company.product(`name`,`x`,`y`,`sum`)"+
+	"values(?,?,?,?)";
+	
+	try
+	{
+		
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection conn=DriverManager.getConnection(url, user, password);
+		PreparedStatement ps=conn.prepareStatement(sql);
+		
+		
+		ps.setString(1,a.getName());
+		ps.setInt(2,a.getX());
+		ps.setInt(3,a.getY());
+		ps.setInt(4,a.getSum());
+		
+		ps.executeUpdate();
+		
+		
+		
+	}
+	catch(Exception e)
+	{
+		
+		out.println("no");
+		
+	}
+
+
+
+
+
+%>
+<body>
+<table width="750" align="center">
+  <tbody>
+    <tr>
+      <td height="50" align="center" bgcolor="#444444"><font size="5" color="#F0E4E4">Company</font></td>
+    </tr>
+    <tr align="center" bgcolor="#888888" >
+      <td><%=a.getName() %>你的訂單</td>
+    </tr>
+    <tr>
+      <td bgcolor="#DDDDDD"><table width="200" border="0" align="center">
+        <tbody>
+          <tr align="left">
+            <td>尺=<%=a.getX() %></td>
+          </tr>
+          <tr align="left">
+            <td>筆=<%=a.getY() %></td>
+          </tr>
+          <tr align="left">
+            <td>一共:<%=a.getSum() %> 元</td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+    <tr>
+      <td bgcolor="#AAAAAA">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
