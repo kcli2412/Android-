@@ -1,0 +1,27 @@
+﻿class A_1 extends A
+{
+	private int powerpoint;
+	
+	A_1(String name, int chi, int word,int powerpoint)
+	{
+		super(name,chi,word);
+		this.powerpoint=powerpoint;
+		
+		//System.out.println("A_1小組 , powerpoint="+powerpoint);
+		
+	}
+	
+	
+	void setPowerpoint(int powerpoint)
+	{
+		this.powerpoint=powerpoint;
+		
+	}
+	
+	int getPowerpoint()
+	{
+		
+		return powerpoint;
+	}
+	
+}

@@ -1,0 +1,30 @@
+class ex6
+{
+	public static void main(String args[])
+	{
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		System.out.println("請輸入密碼");
+		
+		int password=sc.nextInt();
+		
+		
+		while(password!=1234)
+		{
+			System.out.println("錯，重新輸入");
+			
+			password=sc.nextInt();
+		
+		
+		}
+		
+		
+		System.out.println("恭喜你");
+	
+	
+	
+	
+	}
+
+
+
+}

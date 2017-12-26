@@ -1,0 +1,23 @@
+﻿class A extends school
+{
+	
+	int word;
+	
+	A()
+	{
+		System.out.println("A班學員");
+	}
+	
+	void show()
+	{
+		
+		System.out.println("名:"+name+
+		"\t國文:"+chi+
+		"\tword:"+word);
+		
+	}
+
+
+
+
+}

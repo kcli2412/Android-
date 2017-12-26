@@ -1,0 +1,40 @@
+class ex1
+{
+	public static void main(String args[])
+	{
+			/*System.out.println(5&2);
+			System.out.println(5|2);
+			System.out.println(5^2);
+			System.out.println(7|2);
+			System.out.println(7^2);
+			System.out.println(~(-5));
+			*/
+			/*
+			System.out.println(5>>2);
+			System.out.println(5<<2);
+			*/
+			
+			boolean result;
+			
+			int x=1,y=1;
+			
+			
+			result=1>2 && x++>y++ && x>10 && y<10;
+			//result=1>2 & x++>y++ & x>10 & y<10;
+			
+			System.out.println("result="+result);
+			System.out.println("x="+x);
+			System.out.println("y="+y);
+			
+			
+			
+	
+	
+	
+	
+	}
+
+
+
+
+}

@@ -1,0 +1,33 @@
+class superman extends krypton implements Flyer
+{
+	public void takeoff()
+	{
+	}
+	public void land()
+	{
+	
+	}
+	public void fly()
+	{
+	
+	}
+	
+	public void leapBuilding()
+	{
+	
+	}
+	
+	public void stopBuilet()
+	{
+	
+	}
+	
+	public void eat()
+	{
+	
+	
+	}
+
+
+
+}

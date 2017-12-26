@@ -1,0 +1,14 @@
+﻿class school
+{
+	String name;
+	double chi;
+	
+	school()
+	{
+		System.out.println("新增一位SCHOOL學生");
+		
+	}
+	
+
+
+}

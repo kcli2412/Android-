@@ -1,0 +1,24 @@
+class member implements java.io.Serializable
+{
+	private String name;
+	private String add;
+	private String tel;
+	
+	member(String name, String add,String tel)
+	{
+		this.name=name;
+		this.add=add;
+		this.tel=tel;
+	
+	}
+	
+	void show()
+	{
+	
+		System.out.println("名:"+name+"\t地址:"+add+"\t電話:"+tel);
+	
+	}
+
+
+}
+

@@ -1,0 +1,56 @@
+interface bookstore
+{
+	 String storeName="¥¨¦K¹q¸£";
+	
+	  double bookSell(int number);
+
+
+
+}
+
+class bookA implements bookstore
+{
+	
+	public double bookSell(int number)
+	{
+		
+		return 770*number;
+	}
+}
+
+class bookB implements bookstore
+{
+	
+	public double bookSell(int number)
+	{
+		
+		return 650*number;
+	}
+	
+}
+
+class addbook
+{
+	public static void main(String args[])
+	{
+		
+		bookstore[] b=
+		{
+			
+			new bookA(),
+			new bookB(),
+			new bookA()
+			
+			
+			
+		};
+		System.out.println(b[0].bookSell(10));
+		System.out.println(b[1].bookSell(20));
+		System.out.println(b[2].bookSell(15));
+		
+		//bookstore b=new bookstore();
+	}
+	
+	
+}
+

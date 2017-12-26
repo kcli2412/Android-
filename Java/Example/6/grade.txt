@@ -1,0 +1,52 @@
+class grade
+{
+	private String name;
+	private int chi;
+	private int eng;
+	private int sum;
+	
+	grade(String name, int chi,int eng)
+	{
+		this.name=name;
+		this.chi=chi;
+		this.eng=eng;
+		sum=chi+eng;
+	
+	
+	}
+	
+	
+	void sum1(int chi,int eng)
+	{
+		this.chi=chi;
+		this.eng=eng;
+		
+		sum=chi+eng;
+		
+		
+	}
+	
+	int sum2(int chi,int eng)
+	{
+		this.chi=chi;
+		this.eng=eng;
+		
+		sum=chi+eng;
+		
+		return sum;
+	}
+	
+	void show()
+	{
+		System.out.println("名:"+name+
+		"\t國文:"+chi+
+		"\t英文:"+eng+
+		"\t總分:"+sum);
+		
+	
+	}
+
+
+
+
+}

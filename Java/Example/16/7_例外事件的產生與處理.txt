@@ -1,0 +1,134 @@
+1.程式碼如下，請問最後結果為何?
+	01. class A{
+	02.    public void mA(){
+	03.       B b=new B();
+	04.       b.mB();
+	05.	  throw new Exception();
+	06.     }
+	07.  }
+	08. class B{
+	09.   public void mB(){
+	10.    //方法內容
+	11.   }
+	12. }
+	13.class Execute{
+	14.    public static void main(String[] args){
+	15.        try{
+	16.            A a=new A();
+	17.            a.mA();
+	18.        }
+	19.        catch(Exception e){
+	20.          System.out.println("Exception");
+	21.        }
+	22.     }
+	23.  }
+
+
+	A. Exception
+	B. 沒有輸出
+	C. 執行失敗
+	D. 編譯失敗
+
+
+2.程式碼如下，請問最後果為何?
+	01.  class X extends Exception{}
+	02.
+	03. class A{
+	04.    public void mathod(){System.out.print("A ");}
+	05. }
+	06.
+	07. class B extends A{
+	08.    public void method() throws X{
+	09.       super.method();
+	10.       System.out.print("B ");
+	11.    }
+	12. }
+	13.
+	14. class Execute{
+	15.    public static void main(String[] args){
+	16.	  try{new B().method();}
+	17.       catch(Exception e){
+	18.         System.out.println("Excetion");
+	19.       }
+	20.     }
+	21. }
+
+	A. Exception
+	B. A B
+	C. A B Exception
+	D. 執行失敗
+	E. 編譯失敗
+
+
+3.程式碼如下，請問最後結果為何?
+	01. class Execute{
+	02.   public static void main(String args[]){
+	03.      try{throw new NullPointerException();}
+	04.      catch(RuntimeException e){
+	05.         System.out.println("RuntimeException");
+	06.      }
+	07.    	 catch(NullPointerException e){
+	08.         System.out.println("NullPointerException");
+	09.	}
+	10.   }
+	11. }
+
+	A. 編譯失敗
+	B. RuntimeException
+	C. NullPointerException
+	D. 沒有輸出
+
+
+4.程式碼如下，請問最後結果為何?
+	01. class X extends Exception{}
+	02.
+	03. class A{
+	04.   public void method() throws X{
+	05.      throw new X();
+	06.   }
+	07. }
+	08.
+	09. class B extends A{
+	10.    public void method(){
+	11.       super.method();
+	12.       System.out.print("B");
+	13.    }
+	14. }
+	15.
+	16. class Execute{
+	17.   public static void main(String args[]){
+	18.      try{new B().method();}
+	19.      catch(Exception e){
+	20.         System.out.println("Exception");
+	21.      }
+	22.    }
+	23.  }
+
+	A. B
+	B. 沒有輸出
+	C. Exception
+	D. 編譯失敗
+
+5.程式碼如下，請問最後結果為何?
+	01. class A{
+	02.   B b;
+	03.   public void mA(){b.mB();}
+	04. }
+	05.
+	06. class B{
+	07.   public void mB(){System.out.print("B");}
+	08. }
+	09.
+	10. class Execute{
+	11.   public static void main(String args[]){
+	12.      new A().mA();
+	13.    }
+	14. }
+
+	A. B
+	B. 沒有輸出
+	C. 執行失敗
+	D. 編譯失敗
+	
+
+

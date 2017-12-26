@@ -1,0 +1,20 @@
+﻿class add
+{
+	public static void main(String args[])
+	{
+		//student s=new student(78);
+		//A a1=new A("qq",74,100);
+		//A a2=new A(95,85);
+		//B b=new B("bb",74,85);
+		
+		A_1 a_1=new A_1("ac",74,85,96);
+	
+		System.out.println("名:"+a_1.getName()+
+		"\t國文:"+a_1.getChi()+
+		"\tword:"+a_1.getWord()+
+		"\tpowerpoint:"+a_1.getPowerpoint());
+	
+	}
+
+
+}

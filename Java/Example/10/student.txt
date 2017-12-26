@@ -1,0 +1,50 @@
+﻿class student
+{
+	private String name;
+	private int chi;
+
+	
+	
+	
+	student(String name, int chi)
+	{
+		
+		this.name=name;
+		this.chi=chi;
+		
+		/*System.out.println("新增一位 student ,名:"+name+
+		"\t國文:"+chi);*/
+	}
+	
+	student(int chi)
+	{
+		
+		
+		this.chi=chi;
+		
+		/*System.out.println("新增一位 student ,名:"+name+
+		"\t國文:"+chi);*/
+	}
+	
+	void setName(String name)
+	{
+		this.name=name;
+	}
+	void setChi(int chi)
+	{
+		
+		this.chi=chi;
+	}
+	
+	String getName()
+	{
+		return name;
+	}
+	
+	int getChi()
+	{
+		return chi;
+	}
+	
+	
+}

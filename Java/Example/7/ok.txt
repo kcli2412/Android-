@@ -1,0 +1,14 @@
+private void okMouseClicked(java.awt.event.MouseEvent evt) {                                
+      //System.out.println("hello java");
+     String Name=name.getText();
+     String CHI=chi.getText();
+     String ENG=eng.getText();
+     int Chi=Integer.parseInt(CHI);
+     int Eng=Integer.parseInt(ENG);
+     
+     student s=new student(Name,Chi,Eng);
+     
+     Show.setText(s.show());
+     
+     
+    }                         

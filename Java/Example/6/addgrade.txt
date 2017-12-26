@@ -1,0 +1,43 @@
+class addgrade
+{
+	public static void main(String args[])
+	{
+		
+		
+		
+		grade x=new grade("aa",74,85);
+		x.show();
+		double ave=x.sum2(85,66)/2.;
+		
+		System.out.println(ave);
+		
+		//x.show();
+		
+		/*
+		grade@xxxxxx-->stack
+		heap--->
+		name="null"
+		chi=0
+		eng=0
+		sum=0
+		
+		this.name=name;
+		this.chi=chi;
+		this.eng=eng;
+		sum=chi+eng;
+		
+		
+		
+		*/
+		/*grade x2=new grade("a",64,85);
+		x.show();
+		x.chi=80;
+		x.sum=x.chi+x.eng;
+		x.show();*/
+	
+	
+	}
+
+
+
+}

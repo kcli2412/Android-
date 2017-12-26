@@ -1,0 +1,42 @@
+/*
+
+*/
+
+class ex1
+{
+	public static void main(String[] args)
+	{
+		System.out.println("hello , java");//³o¬O¿é¥X
+		/*
+		1.gdfgd
+		2.if (savedInstanceState == null) {
+            // We were just launched -- set up a new game
+            mSnakeView.setMode(mSnakeView.READY);
+        } else {
+            // We are being restored
+            Bundle map = savedInstanceState.getBundle(ICICLE_KEY);
+            if (map != null) {
+                mSnakeView.restoreState(map);
+            } else {
+                mSnakeView.setMode(SnakeView.PAUSE);
+            }
+        }
+		
+		
+		
+		
+		*/
+	
+	
+	}
+
+
+
+
+
+	}
+	
+	/*
+	
+	
+	*/

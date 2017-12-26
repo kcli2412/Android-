@@ -1,0 +1,83 @@
+class salary
+{
+	String name;
+	int x1;//業績
+	double x2;//獎金比
+	int x3;//獎金
+	int x4;//勞保
+	int x5;//健保
+	int x6;//車馬費
+	int x7;//底薪
+	int x8;//實領薪資
+	
+	
+	
+	salary(String name,int x1)
+	{
+		if(x1>0)
+		{
+			this.name=name;
+			if(x1>=1500000)
+			{
+				x2=0.08;				
+			}
+			else if(x1>=800000 && x1<1500000)
+			{
+				x2=0.05;
+			}
+			else if(x1>=300000 && x1<800000)
+			{
+				x2=0.03;
+			}
+			else if(x1>=0 && x1<300000)
+			{
+				x2=0;
+			}
+			else
+			{
+				
+			}
+			this.x1=x1;
+			x3=(int)(x1*x2);
+			x4=1000;
+			x5=1000;
+			x6=2000;
+			x7=18000;
+			x8=x7+x3-x4-x5+x6;
+				
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	void show()
+	{
+		System.out.println("名:"+name+
+		"\t業績:"+x1+
+		"\t獎金比:"+x2+
+		"\t獎金:"+x3+
+		"\t勞保:"+x4+
+		"\t健保:"+x5+
+		"\t車馬費:"+x6+
+		"\t底薪:"+x7+
+		"\t實領薪資:"+x8);
+		
+		
+		
+	}
+
+
+
+
+
+}

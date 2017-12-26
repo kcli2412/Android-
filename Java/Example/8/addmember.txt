@@ -1,0 +1,53 @@
+﻿class addmember
+{
+	public static void main(String args[])
+	{
+		
+		/*
+		Member[]  m=new Member[3];//m[0],m[1],m[2]-->名字
+		m[0]=new Member("abc","ww","123");
+		m[1]=new Member("ww","rr","7777");
+		m[2]=new Member("qq","bb","456");
+		*/
+		
+		Member[] m={
+			new Member("abc","ww","123"),
+			new Member("ww","rr","7777"),
+			new Member("qq","bb","456"),
+			new Member("wer","asa","789")
+			};
+		
+		
+		System.out.println(m);
+		System.out.println(m[0]);
+		
+		for(int i=0;i<m.length;i++)
+		{
+			
+			m[i].show();
+		}
+		System.out.println("===================");
+		
+		
+		for(Member o:m)
+		{
+			//o=m[0]
+			o.show();
+			
+		}
+		
+		/*
+		Member m1=new Member("abc","ww","123");
+		Member m2=new Member("ww","rr","7777");
+		Member m3=new Member("qq","bb","456");
+		
+		m1.show();
+		m2.show();
+		m3.show();
+		*/
+	
+	
+	}
+
+
+}

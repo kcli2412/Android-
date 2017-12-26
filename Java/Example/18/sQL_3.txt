@@ -1,0 +1,57 @@
+﻿import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.sql.ResultSet;
+public class SQL_3 {
+    
+    public static void main(String args[])
+    {
+        String url="jdbc:mysql://localhost:3305/school";
+        String user="root";
+        String password="1234";
+        String sql="select id,name,chi,eng,sum,ave from school.student ";
+        String sql2="select id,name,chi,eng,sum,ave from school.student order by sum desc";
+        String sql3="select id,name,chi,eng,sum,ave from school.student order by chi,sum";
+         String sql4="select id,name,chi,eng,sum,ave from school.student where  name='abc'  ";
+          String sql5="select id,name,chi,eng,sum,ave from school.student where    name='abc' or sum>=150 order by sum desc";
+        try
+        {
+                Connection conn=DriverManager.getConnection(url, user, password);
+                Statement st=conn.createStatement();
+                
+                ResultSet rs=st.executeQuery(sql5);
+                
+              while(rs.next())
+              {
+                  
+                    System.out.print("ID:"+ rs.getInt("id")
+                           +"\tname:"+ rs.getString("name")+
+                            "\tchi"+ rs.getInt("chi")+
+                            "\teng"+rs.getInt("eng")+
+                             "\tsum:"+rs.getInt("sum")+
+                            "\tave:"+rs.getDouble("ave")+"\n");
+                   
+                  
+              }
+                
+                
+                /* rs.next();
+                
+                System.out.print("ID:"+ rs.getInt("id")+"\t");
+                System.out.print("name:"+ rs.getString("name")+"\t");
+                
+                 rs.next();
+                
+                System.out.print("\nID:"+ rs.getInt("id")+"\t");
+                System.out.print("name:"+ rs.getString("name")+"\t");
+                */
+                
+                 System.out.println("ok");
+        }
+        catch(Exception e)
+        {
+                System.out.println("no");
+         }
+    }
+    
+}

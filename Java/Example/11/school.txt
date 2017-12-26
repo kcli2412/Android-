@@ -1,0 +1,85 @@
+﻿class school
+{
+	String name;
+	int chi;
+	
+	/*school(String name,int chi)
+	{
+		this.name=name;
+		this.chi=chi;
+	
+	}*/
+	
+	void show1()
+	{
+		System.out.println("name="+name+"\tchi"+chi);
+	
+	}
+	
+	void show2()
+	{
+		System.out.println("name="+name);
+	
+	}
+	
+	int abc(int x, int y , int z,int a)
+	{
+		
+		return x+y+z+a;
+	}
+
+	int abc2(int x[])
+	{
+		
+		return x[0]+x[1]+x[2]+x[3];
+	}
+	int abc3(int... x)
+	{
+		
+		return x[0]+x[1]+x[2]+x[3];
+	}
+	
+	void abc4(int[] x, double[] y)
+	{
+		
+	}
+	
+	/*void abc5(int... x, double... y)
+	{
+		
+	}*/
+	void abc5(double[] a,int x, double... y)
+	{
+		
+	}
+	
+	public static void main(String args[])
+	{
+		int[] x={41,85,96,74};
+		double[] y={41.5,52.6,63.6};
+		
+		new school().abc4(x,y);
+		//System.out.println(new school().abc3(10,20,30,74));
+		//System.out.println(new school().abc3(x));
+		//System.out.println(new school().abc2(x));
+		//System.out.println(new school().abc(10,20,30,52));
+		
+		
+		/*
+		System.out.println(new school("aa",85));//.show1();
+		System.out.println(new school("aa",85));//.show2();
+		*/
+		
+		//System.out.println(new school("abc",74));
+		
+		//school s=new school("abc",74);
+		//System.out.println(s);
+		/*school s=new school("abc",74);
+		s.show1();
+		s.show2();
+		
+		System.out.println(s);*/
+		
+	}
+
+}

@@ -1,0 +1,66 @@
+class addstudent
+{
+	public static void main(String args[])
+	{
+		student s1=new student(65,75.5);
+		s1.show();
+		
+		/*
+		student s1=new student();
+		student s2=new student();
+		s1.show();
+		s2.show();
+		*/
+		
+		/*
+		System.out.println(s1);
+		System.out.println(s1.name);
+		System.out.println(s1.tel);
+		System.out.println(s1.chi);
+		System.out.println(s1.eng);
+		System.out.println(s1.x);
+		
+		System.out.println(s2);
+		System.out.println(s2.name);
+		System.out.println(s2.tel);
+		System.out.println(s2.chi);
+		System.out.println(s2.eng);
+		System.out.println(s2.x);
+		*/
+		
+		/*
+		int x=10;
+		
+		System.out.println(x);
+		*/
+		
+		/*
+		String name1="abc";
+		String tel1="123456";
+		int chi1=75;
+		int eng1=85;
+		
+		String name2="www";
+		String tel2="8955";
+		int chi2=65;
+		int eng2=75;
+		
+		System.out.println("name1:"+name1+
+		"\ttel1:"+tel1+
+		"\tchi1:"+chi1+
+		"\teng1:"+eng1);
+		
+		System.out.println("name2:"+name2+
+		"\ttel2:"+tel2+
+		"\tchi2:"+chi2+
+		"\teng2:"+eng2);
+		*/
+	
+	
+	
+	}
+
+
+
+
+}

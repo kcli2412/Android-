@@ -1,0 +1,25 @@
+package school.sa;
+
+public class student
+{
+	private String name;
+	private int chi;
+	
+	public int x;
+	protected int y;
+	
+	public student(String name, int chi)
+	{
+		this.name=name;
+		this.chi=chi;
+		
+	}
+	
+	public String show()
+	{
+		return "¦W:"+name+"\t°ê¤å:"+chi;
+		
+	}
+	
+
+}

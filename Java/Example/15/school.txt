@@ -1,0 +1,39 @@
+﻿class checkA extends Exception
+{
+}
+class checkB extends Exception
+{
+}
+
+class school
+{
+
+	void abc() throws checkA//Exception//checkA,checkB
+	{
+		int i=10;
+		if(i>=5) throw new checkA();
+		//if(i<=0) throw new checkB();
+		//if(i<=0) throw new Exception();
+	}
+
+}
+
+class A extends school
+{
+	
+	/*void abc() 
+	{
+		
+	}*/
+	
+	
+	void abc() throws Exception//checkA//,checkB
+	{
+		int i=10;
+		//if(i>=5) throw new checkA();
+		//if(i<=0) throw new checkB();
+		if(i<=0) throw new Exception();
+	}
+	
+
+}

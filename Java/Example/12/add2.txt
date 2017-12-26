@@ -1,0 +1,41 @@
+class add2
+{
+	public static void main(String args[])
+	{
+		
+		school4[] s=
+		{
+			new sa("aa",74),
+			new sb("rr",85),
+			new sa("aa",74),
+			new sb("aa",64),
+			new sb("aa",74),
+			new sa("aa",74)
+			
+			
+		};
+		
+		for(int i=0;i<s.length;i++)
+		{
+			//System.out.println(s[i].show());
+			s[i].abc3();
+			
+		}
+		
+		
+		
+		//sa s=new sa("qq",74);
+		//school s=new sa("qq",74);
+		
+		//System.out.println(s.show());
+		//s.abc();
+		
+		//school s2=new school("abc");
+	
+	
+	
+	}
+
+
+
+}

@@ -1,0 +1,32 @@
+class student
+{
+	String name;
+	String tel;
+	int chi;
+	double eng;
+	boolean x;
+	//int chi=60;
+	
+	student(int chi,double eng)
+	{
+		//int chi=60;
+		//int eng=60;
+		this.chi=chi;
+		this.eng=eng;
+		System.out.println("新增一位學生");
+	}
+	
+	
+	
+	void show()
+	{
+		System.out.println("名:"+name+
+		"\t電話:"+tel+
+		"\t國文:"+chi+
+		"\t英文:"+eng+
+		"\tx:"+x);
+		
+	}
+
+
+}

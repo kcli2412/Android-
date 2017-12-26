@@ -1,0 +1,18 @@
+﻿class sb extends school
+{
+	private int excel;
+	
+	void change(int chi,int eng, int excel)
+	{
+		
+		setChi(chi);
+		setEng(eng);
+		this.excel=excel;
+	}
+
+	public String show()
+	{
+		
+		return super.show()+"\texcel:"+excel;
+	}
+}

@@ -1,0 +1,26 @@
+class A extends student
+{
+	private int word;
+	
+	A(String name, int chi,int word)
+	{
+		super(name,chi);
+		this.word=word;
+	
+	}
+	
+	String show()
+	{
+		
+		return super.show()+"\tword:"+word;
+	}
+	
+	
+	void abc()
+	{
+		System.out.println("hello A");
+		
+	}
+
+
+}

@@ -1,0 +1,72 @@
+<%@ page language="java" contentType="text/html; charset=BIG5"
+    pageEncoding="BIG5"
+    import="java.sql.Connection"
+    import="java.sql.DriverManager"
+    import="java.sql.Statement"
+    import="java.sql.ResultSet"
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+<table width=750 align=center >
+	<tr>
+		<td  height=80 bgcolor=#444444 align=center>
+		<font size=7 color=white >Company</font>
+	<tr bgcolor=#888888>
+		<td width=150 height=30 align=center>所有訂單
+	<tr>
+		<td bgcolor="#DDDDDD" height="300" align=center valign=top>
+		<%
+
+		request.setCharacterEncoding("BIG5");
+		String name=request.getParameter("name");
+		String url="jdbc:mysql://localhost:3305/company";
+		String user="root";
+		String password="1234";
+		String sql="select * from company.product where name='"+name+"'";
+		
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection conn=DriverManager.getConnection(url, user, password);
+			Statement st=conn.createStatement();
+			
+			ResultSet rs=st.executeQuery(sql);
+			
+			out.println("<table  width=300>");
+			//out.println("<tr bgcolor=#888888><td>編號<td>姓名<td>尺<td>筆<td>總價");
+			while(rs.next())
+			{
+				out.println("<tr>");
+				out.println("<tr><td>編號<td width=100>"+rs.getInt("ID"));
+				out.println("<tr><td>姓名<td width=100>"+rs.getString("name"));
+				out.println("<tr><td>尺<td width=100>"+rs.getInt("x"));
+				out.println("<tr><td>筆<td width=100>"+rs.getInt("y"));
+				out.println("<tr><td>總價<td width=100>"+rs.getInt("sum"));
+				out.println("<tr><td colspan=2><hr>");
+			}
+			
+			out.println("</table >");
+			
+			
+			
+		}
+		catch(Exception e)
+		{
+			out.println("no");
+		}
+
+		%>
+			
+	<tr>
+		<td  height=30 bgcolor=#AAAAAA><a href=../index.html>回首頁</a>
+
+</table>
+
+
+</body>
+</html>

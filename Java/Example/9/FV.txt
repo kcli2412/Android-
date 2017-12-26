@@ -1,0 +1,48 @@
+﻿class FV
+{
+	private String ID;
+	private static double pv;
+	private double r;
+	private int n;
+	private double fv;
+	
+	
+	FV(String ID,double r,int n)
+	{
+		this.ID=ID;
+		this.r=r;
+		this.n=n;
+		
+		
+		
+		
+	
+	
+	}
+	static void Title()
+	{
+		
+		System.out.println("編號:\t利率\t年\t本金\t複本利和");
+	}
+	
+	static void change(double PV)
+	{
+		
+		pv=PV;//this-->物件類型f[0].pv-->non-static
+		//fv=pv*Math.pow((1+r),n);
+		
+	}
+	
+	void show()
+	{
+		fv=pv*Math.pow((1+r),n);
+		System.out.println(ID+"\t"+r+"\t"+n+"\t"+pv+"\t"+fv);
+	
+	
+	}
+
+
+
+
+
+}

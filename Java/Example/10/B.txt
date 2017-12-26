@@ -1,0 +1,24 @@
+﻿class B extends student
+{
+	private int excel;
+	
+	B(String name,int chi,int excel)
+	{
+		
+		super(name,chi);
+		this.excel=excel;
+		//System.out.println("B班學員 , excel="+excel);
+	}
+	
+	void setexcel(int excel)
+	{
+		this.excel=excel;
+		
+	}
+	
+	int getExcel()
+	{
+		return excel;
+	}
+
+}

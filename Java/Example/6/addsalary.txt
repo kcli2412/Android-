@@ -1,0 +1,14 @@
+class addsalary
+{
+	public static void main(String args[])
+	{
+		salary s=new salary("aaa",-465000);
+		s.show();
+	
+	
+	}
+
+
+
+
+}

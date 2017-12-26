@@ -1,0 +1,80 @@
+interface bookstore
+{
+	void bookprice(double price);
+	
+	void bookname(String name);
+
+}
+
+/*class book implements bookstore
+{
+	
+	public void bookprice(double price)
+	{
+		System.out.println("書的價格:"+price);
+		
+	}
+}*/
+
+
+class add3
+{
+	public static void main(String args[])
+	{
+		
+		
+		new bookstore()
+		{
+			public void bookprice(double price)
+			{
+				System.out.println("書的價格:"+price);
+		
+			}
+			public void bookname(String name)
+			{
+				System.out.println("書的名字:"+name);
+			}
+			
+		}.bookprice(740);
+		
+		
+		/*bookstore b1=new bookstore()
+		{
+			
+			public void bookprice(double price)
+			{
+				System.out.println("書的價格:"+price);
+		
+			}
+			
+			public void bookname(String name)
+			{
+				System.out.println("書的名字:"+name);
+			}
+			
+			
+			
+		};
+		
+		
+		b1.bookprice(850);
+		b1.bookname("java");*/
+		
+		
+		
+		
+		
+
+		
+		
+		//bookstore b1=new bookstore();
+		
+		
+		//System.out.println(b1);
+		
+		//book b=new book();
+		//b.bookprice(750.2);
+	
+	}
+
+}

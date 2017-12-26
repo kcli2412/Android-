@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+<table width=300 align=center border=1>
+	<tr><td ALIGN=CENTER>學管理系統
+	<tr><td ALIGN=CENTER><a href="add.html">1)新增</a>
+	<tr><td ALIGN=CENTER><a href="query.jsp">2)查詢</a>
+	<tr><td ALIGN=CENTER><a href="../index.html">回首頁</a>
+</table>
+
+</body>
+</html>

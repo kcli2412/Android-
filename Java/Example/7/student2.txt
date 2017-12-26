@@ -1,0 +1,29 @@
+
+public class student {
+   private String name;
+   private int chi;
+   private int eng;
+   private int sum;
+   private double ave;
+   
+   
+   student(String name, int chi,int eng)
+   {
+       this.name=name;
+       this.chi=chi;
+       this.eng=eng;
+       sum=chi+eng;
+       ave=sum/2.;
+   }  
+   
+   String show()
+   {
+       return "名:"+name+
+               "\n國文:"+chi+
+               "\n英文:"+eng+
+               "\n總分:"+sum+
+               "\n平均 :"+ave;      
+       
+   }
+    
+}

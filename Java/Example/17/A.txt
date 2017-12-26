@@ -1,0 +1,23 @@
+class A extends student
+{
+	private int word;
+	
+	A(String name, int chi,int eng, int word)
+	{
+		super(name,chi,eng);
+		this.word=word;
+	}
+
+}
+
+class B extends student
+{
+	private int excel;
+	
+	B(String name, int chi,int eng, int excel)
+	{
+		super(name,chi,eng);
+		this.excel=excel;
+	}
+
+}

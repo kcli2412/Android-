@@ -1,0 +1,75 @@
+class student
+{
+	String name;
+	int chi;
+	//if(chi>=100) chi=0;
+	int eng;
+	int sum;
+	double ave;
+	
+/*
+	student(int x, int y)
+	{
+	}
+	*/
+	student(int chi,String name)
+	{
+	}
+	student(String name,int chi)
+	{
+	}
+	
+	student(String name,int chi,int eng)
+	{
+		if(chi>=0 && chi<=100 && eng>=0 && eng<=100)
+		{
+			this.name=name;
+			this.chi=chi;
+			this.eng=eng;
+			sum=chi+eng;
+			ave=sum/2.;
+			
+			
+		}
+		
+		
+		
+	}
+	
+	student(int chi,int eng)
+	{
+		if(chi>=0 && chi<=100 && eng>=0 && eng<=100)
+		{
+			
+			this.chi=chi;
+			this.eng=eng;
+			sum=chi+eng;
+			ave=sum/2.;
+			
+			
+		}
+		
+		
+		
+	}
+	
+	
+	
+	void show()
+	{
+	
+		//if(chi>=100) chi=0;
+		System.out.println("名:"+name+
+		"\t國文:"+chi+
+		"\t英文:"+eng+
+		"\t總分:"+sum+
+		"\t平均:"+ave
+		);
+	
+	
+	}
+
+
+
+
+}

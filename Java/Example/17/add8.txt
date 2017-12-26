@@ -1,0 +1,31 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.ObjectInputStream;
+import java.io.EOFException;
+class add8
+{
+	public static void main(String args[]) throws FileNotFoundException,IOException,ClassNotFoundException
+	{
+		FileInputStream fs=new FileInputStream("c:/java/abc.txt");
+		
+		ObjectInputStream oos=new ObjectInputStream(fs);
+		try{
+			while(true)
+			{
+				
+					member o=(member)(oos.readObject());
+					o.show();
+				
+		
+			}
+		}
+		catch(EOFException e)
+		{
+			
+		}
+		
+		
+		
+		}
+}

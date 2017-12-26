@@ -1,0 +1,26 @@
+package school.s2;
+import school.sa.student;
+import school.sa.student3;
+
+class C extends student implements student3
+{
+	private int powerpoint;
+	
+	C(String name, int chi, int powerpoint)
+	{
+		super(name,chi);
+		this.powerpoint=powerpoint;
+		
+	}
+	
+	public String show()
+	{
+		
+		return super.show()+"\tpowerpoint:"+powerpoint;
+	}
+	public void abc()
+	{
+		
+	}
+
+}

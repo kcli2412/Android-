@@ -1,0 +1,18 @@
+﻿class B extends school
+{
+	
+	int excel;
+
+	
+	
+	void show()
+	{
+		
+		System.out.println("名:"+name+
+		"\t國文:"+chi+
+		"\texcel:"+excel);
+		
+	}
+
+
+}

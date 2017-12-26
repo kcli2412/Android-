@@ -1,0 +1,57 @@
+class ex6
+{
+	public static void main(String args[])
+	{
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		int chi,eng,math,sum;
+		
+		System.out.println("請輸入國文");
+		chi=sc.nextInt();
+			
+		System.out.println("請輸入英文");
+		eng=sc.nextInt();
+			
+		System.out.println("請輸入數學");
+		math=sc.nextInt();
+		
+		
+		sum=chi+eng+math;
+		
+		
+		if(sum>=200)
+		{
+			if(math>=75)
+			{
+				
+				System.out.println("總分="+sum+",數學="+math+",錄取");
+			}
+			else
+			{
+				System.out.println("總分="+sum+",數學="+math+",不錄取");
+				
+			}
+
+		}
+		else
+		{
+			System.out.println("總分="+sum+",數學="+math+",不錄取");
+
+
+		}	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+
+
+
+
+
+
+}

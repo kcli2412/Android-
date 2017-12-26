@@ -1,0 +1,28 @@
+import java.io.File;
+import java.io.IOException;
+class add2
+{
+	public static void main(String args[]) throws IOException
+	{
+		File f1=new File("c:/java/abc");
+	
+			//f1.createNewFile();
+			f1.delete();
+			//f1.mkdir();
+		
+		/*try
+		{
+			File f1=new File("c:/abc.txt");
+	
+			f1.createNewFile();
+		}
+		catch(IOException e)
+		{
+			
+		}*/
+	}
+
+
+
+
+}

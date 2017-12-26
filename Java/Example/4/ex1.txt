@@ -1,0 +1,72 @@
+class ex1
+{
+	public static void main(String args[])
+	{
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		
+		/*System.out.println("請輸入會員等級"+
+		"\n1)VIP"+
+		"\n2)金卡:"+
+		"\n3)銀卡:"+
+		"\n4)普通:"
+
+		);*/
+		System.out.println("請輸入會員等級"+
+		"\nA)VIP"+
+		"\nB)金卡:"+
+		"\nC)銀卡:"+
+		"\nD)普通:"
+
+		);
+		
+		//int member=sc.nextInt();
+		//char member='B';
+		String member=sc.next();
+		int sum=1000;
+		
+		switch(member)
+		{
+			//case 1:
+			case "A":
+				System.out.println("VIP");
+				sum=(int)(sum*0.8);
+				break;
+			//case 2:
+			case "B":
+				System.out.println("金卡");
+				sum=(int)(sum*0.9);
+				break;
+			//case 3:
+			case "C":
+				System.out.println("銀卡");
+				sum=(int)(sum*0.95);
+				break;
+			//case 4:
+			case "D":
+				System.out.println("普通會員");
+				sum=sum*1;
+				break;
+			default:
+				System.out.println("皆不合");
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		System.out.println("sum="+sum);
+		
+		
+		
+	
+	
+	
+	}
+
+
+
+}

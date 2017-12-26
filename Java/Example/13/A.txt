@@ -1,0 +1,29 @@
+package school.s1;
+import school.sa.student;
+import school.sa.student2;
+
+public class A extends student implements student2
+{
+	private int word;
+	
+	public A(String name,int chi,int word)
+	{
+		super(name,chi);
+		this.word=word;
+	}
+	
+	public String show()
+	{
+		return super.show()+"\tword"+word;
+	}
+	
+	public void skill()
+	{
+		x=10;
+		y=20;
+		System.out.println("x="+x+"\ty="+y+"\tskill A");
+		
+	}
+
+
+}

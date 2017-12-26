@@ -1,0 +1,41 @@
+class student implements Comparable<student>
+{
+	private String name;
+	private int chi;
+	private int eng;
+	private int sum;
+	private double ave;
+	
+	
+	student(String name, int chi,int eng)
+	{
+		this.name=name;
+		this.chi=chi;
+		this.eng=eng;
+		
+		sum=chi+eng;
+		ave=sum/2.;
+	
+	
+	}
+	
+	
+	public int compareTo(student o)
+	{
+		return o.sum-this.sum;
+	}
+	
+	String show()
+	{
+	
+		return "名:"+name+
+		"\t國文:"+chi+
+		"\t英文:"+eng+
+		"\t總分:"+sum+
+		"\t平均:"+ave;
+	
+	}
+
+
+
+}

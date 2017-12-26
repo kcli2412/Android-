@@ -1,0 +1,64 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.HashSet;
+class student
+{
+	private String name;
+	private int chi;
+	private int eng;
+	
+	student(String name,int chi,int eng)
+	{
+		this.name=name;
+		this.chi=chi;
+		this.eng=eng;
+	
+	}
+	
+	String show()
+	{
+		return "名:"+name+
+		"\t國文:"+chi+
+		"\t英文:"+eng;
+	}
+
+
+}
+
+class add4
+{
+	public static void main(String args[])
+	{
+		//ArrayList<student> s=new ArrayList<student>();
+		//LinkedList<student> s=new LinkedList<student>();
+		HashSet<student> s=new HashSet<student>();
+		s.add(new student("abc",74,85));
+		s.add(new student("abc",74,85));
+		s.add(new student("abc",74,85));
+		
+		
+		System.out.println(s);
+		
+		s.add(new student("www",95,65));
+		System.out.println(s);
+		
+		for(student o:s)
+		{
+			System.out.println(o.show());
+			
+		}
+		/*student[] s=
+		{
+			new student("abc",74,85),
+			new student("qq",65,95),
+			new student("rr",85,65)
+			
+		};
+		
+		s[3]=new student("www",95,65);
+		*/
+	
+	}
+
+
+}

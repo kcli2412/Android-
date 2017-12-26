@@ -1,0 +1,173 @@
+﻿class checkA extends Exception
+{
+}
+class checkB extends Exception
+{
+}
+
+class checkC extends Exception{
+}
+class add
+{
+	public static void main(String args[]) throws Exception
+	{
+		
+		//new school().abc(20);
+		school s=new school();
+		//s.abc(20);
+		//s.abc2();
+		int x=5;
+		//assert x>=10: "x需<10";
+		s.abc3(x);
+		
+		for(int i=0;i<10;i++)
+		{
+			
+			System.out.println("hello");
+		}
+		//new A().abc(x);
+		/*try
+		{
+		school s=new school();
+		s.abc(20);
+		s.abc2();
+		}
+		catch(Exception e)
+		{
+			
+		}*/
+	
+	}
+
+}
+class school
+{
+	void abc3(int x)
+	{
+		
+	}
+	
+	void abc2() throws checkB
+	{
+		throw new checkB();
+	}
+	
+	
+	void abc(int x) throws checkA
+	{
+		if(x>=0)
+		{
+			System.out.println("x="+x);
+		}
+		else
+		{
+			throw new checkA();
+		}
+	}
+	
+	/*=============5============*/
+	/*void abc() throws checkA,checkB
+	{
+		int x=10;
+		
+		if(x>=10) throw new checkA();
+		if(x<=5) throw new checkB();
+	}*/
+	
+	
+	/*=============4============*/
+	/*void abc() throws Exception
+	{
+		int x=10;
+		throw new Exception();
+	}*/
+	/*=============3============*/
+	/*void abc() throws checkA
+	{
+		int x=10;
+		throw new checkA();
+	}*/
+	/*==========2=============*/
+	/*void abc()
+	{
+		
+	}	*/
+	/*============1=============*/
+	/*void abc() throws checkA
+	{
+		int x=10;
+		throw new checkA();
+	}*/
+}
+
+class A extends school
+{
+	void abc(int x) throws checkA
+	{
+		super.abc(x);
+		/*if(x>=0)
+		{
+			System.out.println("x="+x);
+		}
+		else
+		{
+			throw new checkA();
+		}
+		
+		*/
+		
+		System.out.println("x*2="+x*2);
+		
+		
+		/*try{
+		super.abc(x);
+		
+		System.out.println("x*2="+x*2);
+		}
+		catch(checkA e)
+		{
+			
+		}*/
+		
+	}
+	
+	
+	/*=============5============*/
+	/*void abc() throws checkC
+	{
+		int x=10;
+		throw new checkC();
+	}*/
+	
+	
+	/*=============4============*/
+	/*void abc() throws checkA
+	{
+		int x=10;
+		throw new checkA();
+	}*/
+	/*=============3============*/
+	/*void abc() throws checkB
+	{
+		int x=10;
+		throw new checkB();
+	}
+	*/
+	
+	
+	/*============2=============*/
+	/*void abc() throws checkA
+	{
+		int x=10;
+		throw new checkA();
+	}*/
+	
+	/*============1==============*/
+	/*void abc()
+	{
+		
+	}*/
+}
+
+
+

@@ -1,0 +1,9 @@
+package school.sa;
+
+public interface student2
+{
+	String show();
+	void skill();
+
+
+}

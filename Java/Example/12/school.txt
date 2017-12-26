@@ -1,0 +1,105 @@
+class school
+{
+	String name;
+	
+	school(String name)
+	{
+		this.name=name;
+	}
+
+	String show()
+	{
+		return"學生名:"+name;
+	}	
+
+
+}
+class school3
+{
+	
+}
+
+interface school2
+{
+	void abc();
+	void abc2();
+}
+interface school4
+{
+	void abc();
+	void abc2();
+	void abc3();
+}
+ class sb extends school implements school2,school4
+{
+	int excel;
+	sb(String name,int excel)
+	{
+		super(name);
+		this.excel=excel;
+		
+	}
+	
+	String show()
+	{
+		
+		return "SB: "+super.show()+"\texcel:"+excel;
+	}
+	
+	public void abc()
+	{
+		System.out.println("hello sb abc");
+	}
+	
+	public void abc3()
+	{
+		System.out.println("hello sb abc3");
+	}
+	
+	public void abc2()
+	{
+		System.out.println("hello sb abc2");
+		
+	}
+	
+	
+}
+	
+	
+	
+
+//class sa  extends school,school3 implements school2
+class sa  extends school implements school2,school4
+{
+	int chi;
+	
+	sa(String name,int chi)
+	{
+		super(name);
+		this.chi=chi;
+		
+	}
+	
+	String show()
+	{
+		
+		return "sa: "+super.show()+"\t國文:"+chi;
+	}
+	
+	public void abc()
+	{
+		System.out.println("hello sa abc");
+	}
+	
+	public void abc3()
+	{
+		System.out.println("hello sa abc3");
+	}
+	
+	public void abc2()
+	{
+		System.out.println("hello sa abc2");
+	}
+	
+}
+	

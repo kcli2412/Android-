@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.HashSet;
+import java.util.TreeSet;
+import java.util.PriorityQueue;
+class add3
+{
+	public static void main(String args[])
+	{
+		//int[] x=new int[3];
+		//int[] x={10,20,30};
+		//x[3]=100;
+		
+		//ArrayList<Integer> x=new ArrayList<Integer>();
+		//LinkedList<Integer> x=new LinkedList<Integer>();
+		//HashSet<Integer> x=new HashSet<Integer>();
+		//TreeSet<Integer> x=new TreeSet<Integer>();
+		PriorityQueue<Integer> x=new PriorityQueue<Integer>();
+		x.add(10);
+		x.add(20);
+		x.add(20);
+		x.add(52);
+		
+		System.out.println(x);
+		x.add(30);
+		System.out.println(x);
+		x.add(3,60);
+		//x.clear();
+		System.out.println(x);
+		//System.out.println(x.get(4));
+		//System.out.println(x.remove(3));
+		System.out.println(x);
+		
+		System.out.println(x.size());
+		
+		for(Integer  o:x)
+		{
+			System.out.println(o);
+		}
+		
+	
+	}
+
+
+
+}

@@ -1,0 +1,25 @@
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+class add4
+{
+	public static void main(String args[]) throws FileNotFoundException,IOException
+	{
+	
+		FileReader f1=new FileReader("c:/java/abc.txt");
+	
+		//System.out.println((char)(f1.read()));
+		
+		int o;
+		while((o=f1.read())!=-1)
+		{
+			
+			System.out.print((char)o);
+		}
+	
+	}
+
+
+
+
+}

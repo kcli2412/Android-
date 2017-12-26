@@ -1,0 +1,125 @@
+class add
+{
+	public static void main(String args[])
+	{
+		
+		student[] s=
+		{
+			new A("qq",74,85),
+			new A("ee",74,98),
+			new B("qq",74,85),
+			new A("ww",85,96),
+			new B("ww",85,96),
+			new B("ee",74,98)
+			
+			
+			
+		};
+		
+		for(int i=0;i<s.length;i++)
+		{
+			//System.out.println(s[i].show());
+			
+			s[i].abc();
+			
+		}
+		
+		
+		
+		/*student[] a=
+		{
+			new A("qq",74,85),
+			new A("ww",85,96),
+			new A("ee",74,98)
+		};
+		
+		
+		student[] b=
+		{
+			new B("qq",74,85),
+			new B("ww",85,96),
+			new B("ee",74,98)
+		};
+		
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println(a[i].show());
+			
+		}
+		
+		for(int i=0;i<b.length;i++)
+		{
+			System.out.println(b[i].show());
+			
+		}
+		*/
+		
+		/*
+		A[] a=
+		{
+			new A("qq",74,85),
+			new A("ww",85,96),
+			new A("ee",74,98)
+		};
+		
+		
+		B[] b=
+		{
+			new B("qq",74,85),
+			new B("ww",85,96),
+			new B("ee",74,98)
+		};
+		
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println(a[i].show());
+			
+		}
+		
+		for(int i=0;i<b.length;i++)
+		{
+			System.out.println(b[i].show());
+			
+		}
+		
+		*/
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		student s1=new student("ss",74);
+		student a1=new A("qq",85,95);
+		student b1=new B("rr",87,78);
+		
+		
+		System.out.println(s1.show());
+		//System.out.println(a1.show());
+		a1.abc();
+		System.out.println(b1.show());
+		*/
+		
+		
+		
+		
+		
+		/*student s1=new student("ss",74);
+		A a1=new A("qq",85,95);
+		B b1=new B("rr",87,78);
+		
+		
+		System.out.println(s1.show());
+		//System.out.println(a1.show());
+		a1.abc();
+		System.out.println(b1.show());
+		*/
+	
+	
+	}
+
+
+}

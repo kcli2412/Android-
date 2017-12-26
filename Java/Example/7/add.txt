@@ -1,0 +1,37 @@
+//import java.util.*;
+import java.util.Scanner;
+import java.util.Timer;
+class add
+{
+	public static void main(String args[])
+	{
+		//java.util.Scanner sc = new java.util.Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
+		Timer t1=new Timer();
+		student s=new student("aa",74,85);
+		s.show();
+		//s.name="qqq";
+		//s.setName("qqq");
+		//s.setChi(85);
+		//s.setEng(77);
+		
+		//double ave=s.Sum2(85,77)/2.;
+		/*
+		this.chi=chi;
+		this.eng=eng;
+		
+		sum=chi+eng;
+		*/
+		//System.out.println(ave);
+		
+		s.Sum2(85,77);
+		s.show();
+		
+		
+		System.out.println(Math.abs(-5));
+		System.out.println(Math.random());
+	
+	}
+
+
+}

@@ -1,0 +1,27 @@
+﻿class Member
+{
+	private String name;
+	private String add;
+	private String tel;
+	
+	Member(String name, String add,String tel)
+	{
+		this.name=name;
+		this.add=add;
+		this.tel=tel;
+	
+	
+	}
+	
+	void show()
+	{
+		System.out.println("名:"+name+
+		"\t地址:"+add+
+		"\t電話:"+tel);
+	
+	}
+
+
+
+
+}

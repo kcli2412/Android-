@@ -1,0 +1,38 @@
+class ex1
+{
+	public static void main(String args[])
+	{
+		float x=10.2F;
+		//float x=10.2f;
+		//float x=(float)10.2;
+		
+		/*int x=10;
+		int y=20;
+		int z=10+20;
+		
+		int z2=x+y;
+		*/
+		/*
+		short x=10;
+		short y=20;
+		short z=10+20;
+		
+		short z2=(short)(x+y);
+		*/
+		
+		/*
+		byte x=10;
+		byte y=20;
+		byte z=10+20;
+		
+		byte z2=(byte)(x+y);
+		*/
+		
+		//System.out.println("hello");
+	
+	
+	}
+
+
+
+}

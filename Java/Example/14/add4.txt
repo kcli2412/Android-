@@ -1,0 +1,67 @@
+﻿class BookName1
+{
+	public static final String book1="java";
+	public static final String book2="javaEE";
+	public static final String book3="javaScript";
+
+
+}
+enum bookName2
+{
+	java,javaEE,javaScript
+	
+}
+/*
+bookName2[]   =
+{
+	java,javaEE,javaScript	
+	
+};
+
+
+*/
+
+class Year
+{
+	enum Month
+	{
+		一月,二月
+		
+	}
+	enum Week
+	{
+		週一,週二
+		
+	}
+	
+	
+	
+	
+}
+
+class add4
+{
+	public static void main(String args[])
+	{
+		Year.Month[] m=Year.Month.values();
+		Year.Week[] w=Year.Week.values();
+		
+		
+		System.out.println(m[0]);
+		System.out.println(w[0]);
+		
+		
+		
+		//System.out.println(BookName1.book1);
+		//System.out.println(bookName2.java);
+		//bookName2[] x=bookName2.values();
+		
+		/*for(int i=0;i<x.length;i++)
+		{
+			System.out.println(x[i]);
+			
+		}*/
+	
+	}
+
+}

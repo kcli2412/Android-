@@ -1,0 +1,46 @@
+class ex7
+{
+	public static void main(String args[])
+	{
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		int x, y , z,sum,member,pay;
+		
+		System.out.println("輸入尺的數量");
+		x=sc.nextInt();
+		
+		
+		System.out.println("輸入筆的數量");
+		y=sc.nextInt();
+		
+		
+		System.out.println("輸入圓規的數量");
+		z=sc.nextInt();
+		
+		sum=x*39+y*29+z*69;
+		
+		System.out.println("是否是會員:\n1)yes\n2)no");
+		member=sc.nextInt();
+		
+		if(member==1) sum=(int)(sum*0.95);
+		
+		
+		System.out.println("一共:"+sum+"元");
+		
+		
+		System.out.println("\n請輸入付款金額:");
+		
+		pay=sc.nextInt();
+		
+		System.out.println("找你:"+(pay-sum)+"元");
+		
+	
+	
+	
+	
+	
+	
+	}
+
+
+
+}

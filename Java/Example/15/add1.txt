@@ -1,0 +1,73 @@
+﻿import java.util.Scanner;
+import java.util.InputMismatchException;
+class add1
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("請輸入索引碼:");
+		
+		
+		try
+		{
+			int n=sc.nextInt();//new java.util.InputMismatchException();
+			
+			int[] x={10,20,30};
+		
+		
+		
+			x[n]=100;//new ArrayIndexOutOfBoundsException()-->中斷
+		
+			System.out.println("請輸入分母");
+			int m=sc.nextInt();
+			
+			System.out.println("x["+n+"](100)/"+m+"="+x[n]/m);//new ArithmeticException();
+		
+			
+		}
+			
+		catch(ArrayIndexOutOfBoundsException e)//=new ArrayIndexOutOfBoundsException()-
+		{
+
+			System.out.println("索引碼需介於0~2");
+		
+		}
+		catch(InputMismatchException e)
+		{
+			System.out.println("輸入的值限定為整數");
+			
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("分母不為0");
+			
+		}
+		catch(RuntimeException e)
+		{
+			
+			System.out.println("重填");
+		}
+		
+		/*
+		finally
+		{
+			
+			for(int i=1;i<=10;i++)
+			{
+				System.out.println("i="+i+"\thello!");
+			
+			}
+			
+		}*/
+		
+			for(int i=1;i<=10;i++)
+			{
+				System.out.println("i="+i+"\thello!");
+			
+			}
+	
+	}
+
+
+
+}

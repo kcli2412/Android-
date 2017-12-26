@@ -1,0 +1,64 @@
+class ex2
+{
+	public static void main(String args[])
+	{
+		
+		
+		int x=10;
+		
+		System.out.println("x\"\\");
+		char a='\'';
+		
+		System.out.println("abc\nd\teee");
+		
+		/*int x=(int)(10+23.2);
+		int x2=10+(int)23.2;
+		
+		int x3=20+(int)10.f;
+		
+		
+		System.out.println(10/3.f);
+		
+		
+		int X=10;
+		 X=50;
+		//int static=52;
+		
+		//int 2x=20;
+		
+		int $abc=20;
+		int _abc=52;
+		int Lesson_One=10;
+		int LessONE=10;
+		
+		int 國文=65;
+		
+		System.out.println("國文="+國文);
+		//int x=10.0;
+		//long x=10.0;
+		//long x=10.0f;
+		//long x=10;
+		
+		//float y=x;
+		
+		
+		//int x=10;
+		//int x=(int)10.6;
+		
+		//char x='a';
+		//char x='9';
+		//char x=68;
+		
+		//boolean x=true;//false
+		//String x="abcbdjfhsdjfhsdfhk";
+		
+		//System.out.println("x="+x);
+	*/
+	
+	}
+
+
+
+
+
+}

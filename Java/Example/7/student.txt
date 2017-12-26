@@ -1,0 +1,108 @@
+class student
+{
+	private String name;
+	private int chi;
+	private int eng;
+	private int sum;
+	
+	student(String name, int chi, int eng)
+	{
+		this.name=name;
+		this.chi=chi;
+		this.eng=eng;
+		sum=chi+eng;
+	
+	
+	}
+	
+	void change(int chi)
+	{
+	}
+	
+	void change(String name)
+	{
+		
+	}
+	void change(int chi,int eng)
+	{
+		
+	}
+	
+	void change(String name,int chi)
+	{
+		
+	}
+	void change(int chi,String name)
+	{
+		
+	}
+	
+	/*
+	int change(int x, int y)
+	{
+		
+		return 100;
+	}
+	*/
+	/*
+	void change(int x, int y)
+	{
+		
+	}
+	*/
+	
+	void setName(String name)
+	{
+		this.name=name;
+	}
+	
+	void setChi(int chi)
+	{
+		this.chi=chi;
+		sum=chi+eng;
+	}
+	
+	void setEng(int eng)
+	{
+		this.eng=eng;
+		sum=chi+eng;
+		
+	}
+	
+	void Sum(int chi,int eng)
+	{
+		this.chi=chi;
+		this.eng=eng;
+		
+		sum=chi+eng;
+		
+	}
+	int Sum2(int chi,int eng)
+	{
+		this.chi=chi;
+		this.eng=eng;
+		
+		sum=chi+eng;
+		
+		//return 100;
+		//return chi+eng;
+		//return (int)10.0;
+		return sum;
+	}
+	
+	
+	void show()
+	{
+		System.out.println("名:"+name+
+		"\t國文:"+chi+
+		"\t英文:"+eng+
+		"\t總分:"+sum);
+		
+	
+	
+	}
+
+
+
+
+}

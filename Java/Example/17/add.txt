@@ -1,0 +1,83 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.HashSet;
+import java.util.TreeSet;
+import java.util.PriorityQueue;
+import java.util.List;
+import java.util.Set;
+import java.util.Queue;
+class add
+{
+	public static void main(String args[])
+	{
+		//List<student> s=new ArrayList<student>();
+		//List<student> s=new LinkedList<student>();
+		//Set<student> s=new HashSet<student>();
+		//Set<student> s=new TreeSet<student>();
+		Queue<student> s=new PriorityQueue<student>();
+		s.add(new A("q",74,85,96));
+		s.add(new B("oo",85,96,77));
+		for(student o:s)
+		{
+			
+			System.out.println(o.show());
+		}
+		s.add(new A("w",65,6,52));
+		System.out.println("======================");
+		for(student o:s)
+		{
+			
+			System.out.println(o.show());
+		}
+		/*student[] s=
+		{
+			new A("q",74,85,96),
+			new B("oo",85,96,77)
+			
+			
+		};
+		
+		for(student o:s)
+		{
+			
+			System.out.println(o.show());
+		}
+		s[2]=new A("w",65,6,52);
+		*/
+		
+		/*
+		ArrayList<student> s=new ArrayList<student>();
+		//LinkedList<student> s=new LinkedList<student>();
+		//HashSet<student> s=new HashSet<student>();
+		//TreeSet<student> s=new TreeSet<student>();
+		//PriorityQueue<student> s=new PriorityQueue<student>();
+		s.add(new student("a1",85,95));
+		s.add(new student("rt",85,95));
+		
+		for(student o:s)
+		{
+			
+			System.out.println(o.show());
+		}
+		System.out.println("======================");
+		
+		s.add(new student("rrr",54,65));
+		for(student o:s)
+		{
+			
+			System.out.println(o.show());
+		}
+		*/
+		
+		/*
+		student s=new student("abc",74,85);
+		System.out.println(s.show());
+		*/
+	
+		
+	
+	}
+
+
+
+}

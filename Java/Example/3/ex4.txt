@@ -1,0 +1,93 @@
+class ex4
+{
+	public static void main(String args[])
+	{
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		int grade;
+		
+		System.out.println("請輸入分數");
+		grade=sc.nextInt();
+		
+		
+		if(grade>=91 && grade<=100)
+		{
+			System.out.println("A");
+			
+		}
+		else if(grade>=76 && grade<=90)
+		{
+			if(grade>82)
+			{
+				
+				System.out.println("B+");
+			}
+			else
+			{
+				System.out.println("B-");
+				
+			}
+		
+		
+		
+		
+		}
+		else if(grade>=60 && grade<=75)
+		{
+			
+			System.out.println("C");
+			
+		}
+		else if(grade>=0 && grade<=59)
+		{
+			
+			System.out.println("D");
+		}
+		else
+		{
+			
+			System.out.println("需介於0~1000");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		if(grade>=60)
+		{
+			System.out.println("及格");
+			System.out.println("恭喜你");
+		}
+		else
+		{
+			System.out.println("不及格");
+			System.out.println("再加油!");
+		}
+		*/
+		
+		
+		/*
+		if(grade>=60)
+		{
+			
+			System.out.println("及格");
+			System.out.println("恭喜你");
+		}
+		*/
+	
+	
+	
+	
+	
+	}
+
+
+
+
+
+}

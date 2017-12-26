@@ -1,0 +1,104 @@
+﻿1.程式碼如下，請問最後結果為何?
+	01. class Execute{
+	02.  public static void main(String args[]){
+	03.     new Execute().cal("one",1);
+	04.     new Execute().cal("two","three",5);
+	05.   }
+	06.   public void cal(String...num1,int num2){
+	07.     System.out.println(num1[num1.length-1]+" ");
+
+
+	A. one 1
+	B. two three 5
+	C. one two
+	D. two one
+	E. 編譯失敗
+
+
+
+2.程式碼如下，請問最後結果為何?
+	01.  class Person{
+	02.     String name="anonymity";
+	03.     public Person(String n){name=n;}
+	04.   }
+	05.  class Employee extends Person{
+	06.     String empID="E00";
+	07.     public Employee(String id){empID=id;}
+	08.   }
+	09.  class Execute{
+	10.     public static void main(String args[]){
+	11.       Employee em=new Employee("E01");
+	12.       System.out.print(em.empID);
+	13.   }
+	14. }
+
+	
+	A. E00
+	B. E01
+	C. anonymity
+	D. E00 E01
+	E. 編譯失敗
+
+
+
+3.第5行插入甚麼方法，可以編譯成功?(選擇3個)
+	01. class A{
+	02    protected int getInt(int i){return i;}
+	03.  }
+	04. class B extends A{
+	05.  //插入程式碼
+	06. }
+
+
+	A. public int getInt(int i){return i;}
+	B. private int getInt(int i){return i;}
+	C. private int getInt(long i){return (int)i;}
+	D. protected long getInt(int i){return i;}
+	E. protected int getInt(long i){return (int)i;}
+
+
+
+4.給定下面程式碼，哪些選項的描述是對的?(選擇3個)
+	01. class Animal{}
+	02. class Dog extends Animal{Tail tail;}
+	03. class Beagle extends Dog{public void jumper(){}}
+	04. class Cat extends Animal{public void jumper(){}}
+
+	A. Cat is-a Animal
+	B. Cat is-a jumper
+	C. Dog is-a Animal
+	D. Dog is-a jumper
+	E. Beagle has-a Tail
+
+
+
+
+5.程式碼如下，請問最後結果為何?
+	01. class Person{
+	02.   final String name;
+	03.   public Person(String n){name=n;}
+	04. }
+	05. 
+	06. class Execute{
+	07.   public static void main(String args[]){
+	08.      Person p=new Person("Joe");
+	09.      System.out.print(p.name);
+	10.   }
+	11. }
+
+
+
+	A. Joe
+	B. null
+	C. 沒有任何輸出
+	D. 編譯失敗
+
+
+
+
+
+
+
+
+
+

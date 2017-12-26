@@ -1,0 +1,42 @@
+class add
+{
+	public static void main(String args[])
+	{
+		vehicle[] v=
+		{
+			new Airplane(),
+			new seaplane(),
+			new Helicopter()
+			
+		};
+		
+		Flyer[] f=
+		{
+			new Airplane(),
+			new seaplane(),
+			new Helicopter(),
+			new Birld(),
+			new superman()
+			
+			
+		};
+		
+		
+		Animal[] a=
+		{
+			
+			new Birld(),
+			new superman(),
+			new krypton()
+			
+			
+		};
+			
+			
+			
+	
+	
+	}
+
+
+}

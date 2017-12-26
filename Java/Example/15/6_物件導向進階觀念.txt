@@ -1,0 +1,100 @@
+1.程式碼如下:
+	01. package books
+	02. class Book{
+	03.       public double price=0.0;
+	04. }
+	
+	請問下列哪個類別可以存取屬性price?
+
+	A. 任何類別
+	B. 同樣在books套件內的類別
+	C. 只要在books套件外的類別都可以
+	D. 只要在Book的子類別即可
+	E. 任何類別都不行
+
+
+
+2.程式碼如下，請問最後結果為何?
+	01. class Car{public int seat(){return 5;}}
+	02. class SUV extends Car{public int seat(){return 7;}}
+	03. class Sports extends Car{public int seat(){return 2;}}
+	04. class Execute{
+	05.     public static void main(String args[]){
+	06.        Car car1=new Car();
+	07.        Car car2=new SUV();
+	08.        Car car3=new sports();
+	09.        System.out.println("total seats="+(car1.seat()+car2.seat()+car3.seat()));
+	10.     }
+	11. }
+
+
+
+	A. 編譯失敗
+	B. 執行失敗
+	C. total seats=17
+	D. total seats=14
+	E. total seats=15
+
+
+3.程式碼如下，請問最後結果為何?
+	01. class Car{public int seat(){return 5;}}
+	02. class SUV extends Car{public int seat){return 7;}}
+	03. class Sports extends Car{public int seat(){return 2;}}
+	04. class Execute{
+	05.     public static void main(String args[]){
+	06.        Car car1=new Car();
+	07.        Car car2=new SUV();
+	08.        Sports car3=(sports)car2;
+	09.        System.out.println(car3.seat());
+	10.   }
+	11.  }
+
+
+
+	A. 編譯失敗
+	B. 執行失敗
+	C. 5
+	D. 7
+	E. 2
+
+
+4.程式碼如下:
+	01. interface IA{
+	02.    int i=1;
+	03.}
+
+	請問第2行的屬性i加上下列哪些修飾詞後仍舊可以編譯成功(選擇2個)?
+	
+	A. final
+	B. public 
+	C. protected
+	D. abstract
+	E. private
+
+
+
+
+5.程式碼如下，請問最後結果為何?
+	01. class Execute{
+	02.   public static void main(Sring args[]){
+	03.     int[] a={100,200,300};
+	04.     object o=a;
+	05.     int[] b=(int[])o;
+	06.     for(int i:b)
+	07.       System.out.print(i+" ");
+	08.    }
+	09.  }
+
+
+	A.編譯失敗
+	B.執行失敗
+	C.100 200 300
+	D.200 100 300
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+class ex3
+{
+	public static void main(String args[])
+	{
+		
+		int x=10;
+		do
+		{
+			if(x>5)
+			{
+				System.out.println("x="+x);
+			}
+			else
+			{
+			System.out.println("x="+x+"\thello java!");
+			x++;
+			}
+			
+		}while(x<=5);
+		
+		/*
+		int x=10;
+		while(x<=5)
+		{
+			System.out.println("x="+x+"\thello java!");
+			x++;
+			
+		}
+		*/
+		
+		
+		/*
+		for(int x=1,y=2;x<=5000 && y<=2000;)
+		{
+			System.out.println("x="+x+"\thello java!");
+			
+			y=2*y+100;
+			x=y+1;
+			
+			
+		}
+		*/
+		
+		
+		
+		
+		/*
+		System.out.println("hello java!");
+		System.out.println("hello java!");
+		System.out.println("hello java!");
+		System.out.println("hello java!");
+		System.out.println("hello java!");
+		*/
+	
+	
+	
+	
+	}
+
+
+
+
+}

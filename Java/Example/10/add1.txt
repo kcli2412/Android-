@@ -1,0 +1,23 @@
+﻿class add1
+{
+	public static void main(String args[])
+	{
+		
+		/*school s=new school();
+		
+		System.out.println(s.show());
+		s.change(87,89);
+		System.out.println(s.show());
+		*/
+		/*sa s1=new sa();
+		System.out.println(s1.show());
+		s1.change(85,74,96);
+		System.out.println(s1.show());
+		*/
+		sb s2=new sb();
+		System.out.println(s2.show());
+		s2.change(74,85,77);
+		System.out.println(s2.show());
+	}
+
+}

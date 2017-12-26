@@ -1,0 +1,21 @@
+import java.io.Serializable;
+public class school implements Serializable{
+    private String name;
+    private int chi;
+    private int eng;
+    
+    
+    school(String name, int chi, int eng)
+    {
+        this.name=name;
+        this.chi=chi;
+        this.eng=eng;
+    }
+    
+    
+    String show()
+    {
+        return "¦W:"+name+"\t°ê¤å:"+chi;
+    }
+    
+}

@@ -1,0 +1,47 @@
+﻿class school
+{
+	private int chi;
+	private int eng;
+	
+	void change(int chi)
+	{
+		this.chi=chi;
+	}
+	void change(int eng,int chi)
+	{
+		this.chi=chi;
+		this.eng=eng;
+	}
+	
+	protected String show()
+	{
+		return "國文:"+chi+"\t英文:"+eng;
+		
+	}
+	
+	void setChi(int chi)
+	{
+		this.chi=chi;
+	}
+	
+	void setEng(int eng)
+	{
+		this.eng=eng;
+	}
+	
+	int getEng()
+	{
+		return eng;
+	}
+	
+	int getChi()
+	{
+		
+		return chi;
+	}
+	
+	
+	
+	
+
+}

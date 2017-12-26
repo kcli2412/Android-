@@ -1,0 +1,54 @@
+﻿class ex3
+{
+	public static void main(String args[])
+	{
+		int x=20;
+		int y=10;
+		
+		System.out.println("x="+x);
+		System.out.println("y="+y);
+		
+		System.out.println("==========================");
+		y=x;//值=值-->copy
+		System.out.println("x="+x);
+		System.out.println("y="+y);
+		System.out.println("==========================");
+		y=30;
+		System.out.println("x="+x);
+		System.out.println("y="+y);
+		
+		System.out.println("==========================");
+		
+		int[] x1={10,50,30};
+		int[] y1={20,30,40};
+		
+		System.out.println("x1="+x1);
+		System.out.println("y1="+y1);
+		System.out.println("x1[0]="+x1[0]);
+		System.out.println("y1[0]="+y1[0]);
+		System.out.println("==========================");
+		y1[0]=x1[0];//值=值-->copy
+		System.out.println("x1[0]="+x1[0]);
+		System.out.println("y1[0]="+y1[0]);
+		System.out.println("==========================");
+		y1[0]=100;
+		System.out.println("x1[0]="+x1[0]);
+		System.out.println("y1[0]="+y1[0]);
+		System.out.println("==========================");
+		y1=x1;//位址=位址--->位址一樣
+		System.out.println("x1[0]="+x1[0]);
+		System.out.println("y1[0]="+y1[0]);
+		System.out.println("==========================");
+		y1[0]=100;
+		System.out.println("x1[0]="+x1[0]);
+		System.out.println("y1[0]="+y1[0]);
+		System.out.println("x1="+x1);
+		System.out.println("y1="+y1);
+	
+	
+	}
+
+
+
+
+}

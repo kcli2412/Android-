@@ -1,0 +1,76 @@
+package school.ui;
+import school.sa.student;
+import school.sa.student2;
+import school.sa.student3;
+import school.s1.A;
+import school.s1.B;
+import school.s2.C;
+
+class add
+{
+	public static void main(String args[])
+	{
+		
+		student[] s1=
+		{
+			new student("aa",74),
+			new A("ww",85,96),
+			new B("rr",777,85),
+			new C("tt",88,66)
+		};
+		//s1[1].skill();
+		
+		student2[] s2=
+		{
+			new A("rr",65,52),
+			new B("ee",55,22)
+			
+			
+		};
+		
+		//s2[0].skill();
+		
+		//s2[0].x=30;
+		
+		A a=new A("abc",77,85);
+		a.skill();
+		a.x=30;
+		a.y=60;
+		/*
+		student3[] s3=
+		{
+			new B("rr",65,52),
+			new C("ee",55,22)
+			
+			
+		};
+		
+		for(student o:s1)
+		{
+			System.out.println(o.show());
+			
+		}
+		
+		for(student2 o:s2)
+		{
+			//System.out.println(o.show());
+			
+			o.skill();
+			
+		}
+		
+		for(student3 o:s3)
+		{
+			System.out.println(o.show());
+			
+		}
+		*/
+		
+		
+		//System.out.println("hello");
+	
+	
+	}
+
+
+}

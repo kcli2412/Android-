@@ -1,0 +1,22 @@
+﻿class sa extends school
+{
+	int word;
+	
+	void change(int chi,int eng, int word)
+	{
+		
+		//this.eng=eng;
+		//this.chi=chi;
+		setChi(chi);
+		setEng(eng);
+		this.word=word;
+		
+	}
+	
+	public String show()
+	{
+		//return "國文:"+chi+"\t英文:"+eng+"\tword:"+word;
+		return super.show()+"\tword:"+word;
+	}
+
+}

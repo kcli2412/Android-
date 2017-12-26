@@ -1,0 +1,41 @@
+class addstudent
+{
+	public static void main(String args[])
+	{
+		student s=new student(90,65);
+		student s2=new student(78,85);
+		s.show();
+		s2.show();
+		//student s2=new student();
+		
+		//s.show();
+		//s2.show();
+		
+		/*
+		s.show();
+		s.chi=60;
+		s.eng=75;
+		s.sum=s.chi+s.eng;
+		s.ave=s.sum/2.;
+		s.show();
+		
+		
+		s2.show();
+		s2.chi=50;
+		s2.eng=55;
+		s2.sum=s2.chi+s2.eng;
+		s2.ave=s2.sum/2.;
+		s2.show();
+		*/
+		
+		
+		
+		
+		//if(s.chi>=100) s.chi=0;
+	
+	
+	}
+
+
+
+}

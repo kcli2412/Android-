@@ -1,0 +1,25 @@
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+public class FO {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws FileNotFoundException,IOException
+     {
+        FileOutputStream fos=new FileOutputStream("c:/java/18/school.txt");
+        ObjectOutputStream oos=new ObjectOutputStream(fos);
+        
+        
+        oos.writeObject(new school("abc",74,85));
+        oos.writeObject(new school("ee",85,96));
+        
+        oos.close();
+        
+        
+        
+    }
+    
+}

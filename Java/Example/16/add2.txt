@@ -1,0 +1,45 @@
+class book<E,T>
+{
+	String bookname;
+	E bookprice;
+	T tax;
+	
+	book(String bookname, E bookprice,T tax)
+	{
+		this.bookname=bookname;
+		this.bookprice=bookprice;
+		this.tax=tax;
+	
+	}
+	
+	void show()
+	{
+		System.out.println("®Ñ¦W:"+bookname+"\tbookprice:"+bookprice+"\tµ|:"+tax);
+	}
+
+
+}
+
+class add2
+{
+	public static void main(String args[])
+	{
+		//book<Integer,Double> b1=new book<Integer,Double>("java",785,0.05);
+		book b1=new book<Integer,Double>("java",785,0.05);
+		book<Double,Double> b2=new book<Double,Double>("java",785.89,0.05);
+		b1.show();
+		b2.show();
+		
+		
+		
+		/*book<Integer> b1=new book<Integer>("java",765);
+		book<Double> b2=new book<Double>("android",777.8);
+		b1.show();
+		b2.show();
+		*/
+		/*book b1=new book("java",75);
+		b1.show();*/
+	}
+
+
+}

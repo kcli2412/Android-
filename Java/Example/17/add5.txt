@@ -1,0 +1,37 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+class add5
+{
+	public static void main(String args[]) throws FileNotFoundException,IOException
+	{
+		
+		 
+		/*FileOutputStream f1=new FileOutputStream("c:/java/abc.txt");
+		
+		PrintWriter pw=new PrintWriter(f1);//OutputStream o=f1
+		*/
+		PrintWriter pw=
+		new PrintWriter(
+		new FileOutputStream("c:/java/abc.txt")
+		);
+		
+		
+		
+		pw.write("abcd¥¨¦K");
+		pw.close();
+		
+		/*
+		byte[] x={97,98,99,100};
+		
+		f1.write(x);
+		f1.close();
+		*/
+		
+	
+	}
+
+
+
+}

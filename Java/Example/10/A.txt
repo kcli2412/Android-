@@ -1,0 +1,38 @@
+﻿class A extends student
+{	
+	private int word;
+
+	
+	
+	
+	A(String name,int chi,int word)
+	{
+		super(name,chi);
+		this.word=word;
+		//super(chi);
+		//System.out.println("A班學員 , word="+word);
+		
+		
+		
+	}
+	
+	A(int chi,int word)
+	{
+		
+		super(chi);
+		this.word=word;
+		//System.out.println("A班學員 , word="+word);
+		
+	}
+	
+	void setWord(int word)
+	{
+		this.word=word;
+	}
+	int getWord(int word)
+	{
+		return word;
+	}
+	
+
+}

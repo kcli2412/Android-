@@ -1,0 +1,83 @@
+class ex5
+{
+	public static void main(String args[])
+	{
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		int x;
+		
+		System.out.println("叫块计");
+		
+		x=sc.nextInt();
+		
+		
+		if(x%2==0)
+		{
+			
+			if(x>=0)
+			{
+				
+				System.out.println("タ案计");
+			}
+			else
+			{
+				System.out.println("璽案计");
+				
+			}
+		}
+		else
+		{
+			if(x>=0)
+			{
+				
+				System.out.println("タ计");
+			}
+			else
+			{
+				System.out.println("璽计");
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		/*
+		if(x%2==0 && x>=0)
+		{
+			
+			
+		}
+		else if(x%2==0 && x<0)
+		{
+			
+		}
+		else if(x%2!=0 && x>=0)
+		{
+			
+		}
+		else if(x%2!=0 && x<0)
+		{
+			
+			
+		}
+		else
+		{
+			
+		}
+		*/
+			
+			
+			
+	
+	
+		
+	
+	
+	}
+
+
+
+
+}

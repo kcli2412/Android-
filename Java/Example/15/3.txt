@@ -1,0 +1,22 @@
+class Car{public int seat(){return 5;}}
+	 class SUV extends Car{public int seat(){return 7;}}
+	 class Sports extends Car{public int seat(){return 2;}}
+	 class Execute{
+	     public static void main(String args[]){
+	        Car car1=new Car();
+	       Car car2=new SUV();
+		   
+			//Sports car3=(Sports)car2;->Sports car3=new SUV();
+			
+			
+			Car abc1=new SUV();
+			System.out.println(abc1);
+			
+			SUV abc2=(SUV)abc1;//SUV abc2=new SUV();
+		   System.out.println(abc2);
+		  
+		   
+		   
+		   
+	   }
+	  }

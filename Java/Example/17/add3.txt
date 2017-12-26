@@ -1,0 +1,17 @@
+import java.io.FileWriter;
+import java.io.IOException;
+class add3
+{
+	public static void main(String args[]) throws IOException
+	{
+		FileWriter f1=new FileWriter("c:/java/abc.txt");
+	
+		f1.write("abcddd¥¨¦K¹q¸£");
+		
+		f1.close();
+	
+	}
+
+
+
+}

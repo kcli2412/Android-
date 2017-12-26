@@ -1,0 +1,39 @@
+﻿import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+public class SQL_2 {
+
+    
+    public static void main(String[] args) {
+        String url="jdbc:mysql://localhost:3305/school";
+        String user="root";
+        String password="1234";
+        String sql="insert into school.student(name,chi,eng,sum,ave)"+
+                "values(?,?,?,?,?)";
+        
+         try
+        {
+            Connection conn=DriverManager.getConnection(url, user, password);
+            PreparedStatement ps=conn.prepareStatement(sql);
+            student s=new student("abc",74,96);
+           
+            
+            
+            ps.setString(1,s.getName());
+            ps.setInt(2,s.getChi());
+            ps.setInt(3,s.getEng());
+            ps.setInt(4, s.getSum());
+            ps.setDouble(5, s.getAve());
+            
+            ps.executeUpdate();
+            
+            System.out.println("ok");
+        }
+        catch(Exception e)
+        {
+            System.out.println("no");
+        }
+        
+    }
+    
+}

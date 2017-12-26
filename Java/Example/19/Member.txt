@@ -1,0 +1,78 @@
+class Company
+{
+	private String CompanyName;
+	
+	Company(String CompanyName)
+	{
+		this.CompanyName=CompanyName;
+		
+	}
+	
+	String showCompanyName()
+	{
+		return "¤½¥q¦W:"+CompanyName;
+	}
+	
+	
+}
+
+
+class Member extends Company implements Runnable
+{
+	private String name;
+	
+	Member(String name,String CompanyName)
+	{
+		super(CompanyName);
+		this.name=name;
+	
+	}
+	public void run()
+	{
+		
+		show();
+		abc();
+		
+	}
+	
+	
+	
+	void show() 
+	{
+		for(int i=1;i<=10;i++)
+		{
+			try
+			{
+				Thread.sleep(1000);
+				System.out.println("i="+i+showCompanyName()+"\t name="+name);
+			}
+			catch(Exception e)
+			{
+				
+			}
+		}
+	
+	}
+	
+	void abc()
+	{
+		for(int i=1;i<=5;i++)
+		{
+			try
+			{
+			Thread.sleep(300);	
+			System.out.println(name+"\t hello "+showCompanyName());
+			}
+			catch(Exception e)
+			{
+				
+			}
+			
+		}
+		
+	}
+
+
+
+
+}

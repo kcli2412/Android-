@@ -1,0 +1,25 @@
+class B extends student
+{
+	private int excel;
+	
+	B(String name, int chi,int excel)
+	{
+		super(name,chi);
+		this.excel=excel;
+	
+	}
+	
+	String show()
+	{
+		
+		return super.show()+"\texcel:"+excel;
+	}
+	
+	void abc()
+	{
+		System.out.println("hello B");
+		
+	}
+
+
+}

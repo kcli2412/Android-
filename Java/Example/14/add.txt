@@ -1,0 +1,110 @@
+class school
+{
+	String name;
+	static String schoolName;
+	void show()
+	{
+		System.out.println("hello school");
+	}
+	class A
+	{
+		void show()
+		{
+			System.out.println("hello A");
+		}
+		/*static void show2()
+		{
+			System.out.println("hello A2");
+			
+		}*/
+		
+		
+		
+	}
+	
+	static class B
+	{
+		
+		void show()
+		{
+			System.out.println("hello B");
+		}
+		
+		static void show2()
+		{
+			System.out.println("hello B2");
+			
+		}
+		
+	}
+		
+
+	
+}
+class A
+{
+		void show()
+		{
+			System.out.println("hello A2");
+		}
+		
+}
+
+class add
+{
+	public static void main(String args[])
+	{
+		
+		school.B.show2();
+		//new school.B().show();
+		
+		/*
+		school.B b=new school.B();
+		
+		b.show();
+		*/
+		//new school().new A().show();
+		
+		/*school.A a=new school().new A();
+		
+		System.out.println(a);
+		a.show();*/
+		//new school().show();
+		
+		//school s=new school();
+		//s.show();
+		
+		//new A().show();
+		
+		/*A a=new A();
+		a.show();*/
+		
+		
+		
+		
+		
+		/*school.schoolName="gjun";
+		
+		school[] s={
+		new school(),
+		new school(),
+		new school()
+		
+		};
+		
+		for(int i=0;i<s.length;i++)
+		{
+		System.out.println("名:"+s[i].name+"\t學校:"+school.schoolName);
+		}
+		*/
+		/*System.out.println("==========================");
+		s[1].name="abc";
+		school.schoolName="gjun";
+		for(int i=0;i<s.length;i++)
+		{
+		System.out.println("名:"+s[i].name+"\t學校:"+s[i].schoolName);
+		}*/
+	
+	}
+
+}

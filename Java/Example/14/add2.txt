@@ -1,0 +1,56 @@
+class CAL
+{
+	static class Math2
+	{
+		static double RArea(double r)
+		{
+		
+			return 3.14*r*r;
+		
+		}
+		
+		static double Round(double r)
+		{
+		
+			return 2*3.14*r;
+		}
+		static class aaa
+		{
+			
+		}
+	
+	
+	}
+	
+	static class fin
+	{
+		static double FV1(int pv,double r, double n)
+		{
+		
+			return pv*Math.pow((1+r),n);
+		
+		}
+		
+		
+		static double FV2(int pv,double r, int n)
+		{
+		
+			return pv*(1+r*n);
+		
+		}
+	
+	
+	}
+
+}
+
+class add2
+{
+	public static void main(String args[])
+	{
+		System.out.println("­±¿n:"+CAL.Math2.RArea(1.2));
+	
+	}
+
+
+}

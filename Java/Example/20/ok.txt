@@ -1,0 +1,50 @@
+<%@ page 
+language="java" 
+contentType="text/html; charset=BIG5"
+  pageEncoding="BIG5"
+  
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<title>Insert title here</title>
+</head>
+<%
+	String name=request.getParameter("name");
+	int chi=Integer.parseInt(request.getParameter("chi"));
+	int eng=Integer.parseInt(request.getParameter("eng"));
+	int sum=chi+eng;
+	double ave=sum/2.;
+
+%>
+
+<body>
+<table width=400 align=center border=1>
+	<tr>
+		<td colspan=2 align=center>你的成績資料為
+	<tr>
+		<td width=80>姓名:
+		<td><%=name %>
+	<tr>
+		<td width=80>國文:
+		<td><%=chi %>
+	<tr>
+		<td width=80>英文:
+		<td><%=eng %>
+	<tr>
+		<td width=80>總分:
+		<td><%=sum %>
+	<tr>
+		<td width=80>平均:
+		<td><%=ave %>
+	<tr>
+		<td colspan=2 align=center>~~~資料已新增完成~~~
+		
+
+</table>
+
+
+
+</body>
+</html>

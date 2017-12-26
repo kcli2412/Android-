@@ -1,0 +1,117 @@
+﻿class check extends Exception
+{
+	check(String msg)
+	{
+		System.out.println(msg);
+		
+	}
+	
+}
+
+
+
+class student
+{
+	private String name;
+	private int chi;
+	private int eng;
+	
+	//student(String name, int chi, int eng) throws Exception
+	student(String name, int chi, int eng) throws check
+	{
+		 if(chi>=0 && chi<=100 && eng>=0 && eng<=100)
+		 {
+			this.name=name;
+			this.chi=chi;
+			this.eng=eng;
+		 }
+		 else
+		 {
+			//throw  new Exception();
+			throw new check("新增的國文與英文需介於0~100");
+		 }	
+
+			 
+			 
+	
+	}
+	
+	//void change(int chi,int eng) throws Exception
+	void change(int chi,int eng) throws check
+	{
+		if(chi>=0 && chi<=100 && eng>=0 && eng<=100)
+		{
+			
+			this.chi=chi;
+			this.eng=eng;
+		}
+		else
+		{
+				//throw new Exception();
+				throw new check("修改國文與英文需0~100");
+		}
+		
+		
+	}
+	
+	void show()
+	{
+		System.out.println("名:"+name+
+		"\t國文:"+chi+
+		"\t英文:"+eng);
+	
+	}
+
+
+
+}
+
+class add3
+{
+	public static void main(String args[]) throws check
+	{
+			student s=new student("abc",74,85);//new Exception();
+			s.show();
+			
+			s.change(80,-65);//new Exception();
+			s.show();
+		
+			for(int i=1;i<=10;i++)
+			{
+					System.out.println("i="+i+"\thello!");
+			
+			}
+		
+		/*try
+		{
+			student s=new student("abc",-74,85);//new Exception();
+			s.show();
+			
+			s.change(80,-65);//new Exception();
+			s.show();
+		
+			for(int i=1;i<=10;i++)
+			{
+					System.out.println("i="+i+"\thello!");
+			
+			}
+			
+			
+		}
+		catch(check e)
+		{
+			
+		}*/
+		/*
+		catch(Exception e)
+		{
+			
+			System.out.println("分數需0~100");
+		}
+		*/
+	
+	
+	}
+
+
+}

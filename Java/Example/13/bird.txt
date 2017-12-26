@@ -1,0 +1,27 @@
+class Birld extends Animal implements Flyer
+{
+	public void takeoff()
+	{
+	}
+	public void land()
+	{
+	
+	}
+	public void fly()
+	{
+	
+	}
+	
+	public void buildNest()
+	{
+	
+	}
+	
+	public void layEggs()
+	{
+	
+	
+	}
+	
+
+}

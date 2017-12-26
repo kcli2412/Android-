@@ -1,0 +1,29 @@
+﻿class addschool
+{
+	public static void main(String args[])
+	{
+		pcschool s1=new SA();
+		pcschool s2=new SB();
+		pcschool s3=new SC();
+		
+		s1.show();
+		s2.show();
+		s3.show();
+		/*
+		pcschool p1=new pcschool();
+		SA s1=new SA();
+		SB s2=new SB();
+		SC s3=new SC();
+		
+		
+		p1.show();
+		s1.show();
+		s2.show();
+		s3.show();
+		*/
+	
+	
+	}
+
+
+}

@@ -1,0 +1,32 @@
+package school.s1;
+import school.sa.student;
+import school.sa.student2;
+import school.sa.student3;
+
+class B extends student implements student2,student3
+{
+	private int excel;
+	
+	B(String name,int chi,int excel)
+	{
+		super(name,chi);
+		this.excel=excel;
+		
+	}
+	
+	public String show()
+	{
+		
+		return super.show()+"\texcel:"+excel;
+	}
+
+	public void skill()
+	{
+		
+	}
+	public void abc()
+	{
+		
+	}
+
+}

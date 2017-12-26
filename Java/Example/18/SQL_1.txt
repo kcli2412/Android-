@@ -1,0 +1,30 @@
+﻿import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+public class SQL_1 {
+
+    
+    public static void main(String[] args) {
+        String url="jdbc:mysql://localhost:3305/school";
+        String user="root";
+        String password="1234";
+        String sql="insert into school.student(name,chi,eng,sum,ave) "+
+                "values('abc',60,52,112,56)";
+        try
+        {
+           // Class.forName("com.mysql.jdbc.Driver");
+            Connection conn=DriverManager.getConnection(url, user, password);
+            Statement st=conn.createStatement();
+            
+           st.executeUpdate(sql);
+            
+            System.out.println("成功");
+        }
+        catch(Exception e)       
+         {
+                     System.out.println("失敗");
+           }
+    }
+    
+}

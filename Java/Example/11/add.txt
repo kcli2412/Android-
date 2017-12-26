@@ -1,0 +1,78 @@
+﻿class add
+{
+	public static void main(String args[])
+	{
+		String x1="12";
+		String x2="12";
+		
+		System.out.println(x1==x2);
+		System.out.println(x1.equals(x2));
+		
+		String y1=new String("12");
+		String y2=new String("12");
+		
+		System.out.println(y1.equals(y2));
+		System.out.println(y1==y2);
+		
+		/*
+		String x="1234";
+		
+		Integer y=new Integer(x);
+		
+		System.out.println(20+y);
+		
+		System.out.println(20+Integer.parseInt(x));
+		*/
+		
+		/*byte x=10;
+		Byte x2=10;
+		
+		String y="10";
+		System.out.println(x2);
+		
+		System.out.println(10+Byte.parseByte(y));
+		*/
+		/*
+		Byte y2=new Byte(y);
+		System.out.println(10+y2);
+		*/
+		
+		/*A a1=new A();
+		A b1=new A();
+		
+		System.out.println(a1.equals(b1));
+		System.out.println("a1="+a1);
+		System.out.println("b1="+b1);
+		
+		b1=a1;
+		System.out.println("a1="+a1);
+		System.out.println("b1="+b1);
+		System.out.println(a1.equals(b1));
+		*/
+		
+		/*
+		member m1=new member("abc","qqq");
+		System.out.println("name="+m1.name+"\tuser:"+m1.user);
+		m1.name="www";
+		System.out.println("name="+m1.name+"\tuser:"+m1.user);
+		m1.user="rrr";
+		*/
+		//A a1=new A();
+		
+		//a1.test(42.5);
+		//a1.showa();
+		//student a1=new student();
+		/*for(int i=0;i<=10;i++)
+		{
+			System.out.println("hello");
+			
+		}
+		
+		System.out.println(a1 instanceof student);
+		System.out.println(a1 instanceof A);
+		//System.out.println(a1 instanceof B);
+		*/
+	}
+
+
+}

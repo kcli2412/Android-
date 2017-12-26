@@ -1,0 +1,57 @@
+1. 7+6-5*4/3%(2+1)的結果為何?
+
+    A. 13
+    B. 14
+    C. 15
+    D. 16
+    E. 17
+
+
+2.程式碼如下，請問最後結果為何?
+
+    01. int i=100;
+    02. String s="10";
+    03. s+=i;
+    04. Systemout.println(s);
+
+  A. 110
+  B. 10010
+  C. 10100
+  D. 11000
+  E. 編譯失敗
+
+3.程式碼如下，請問最後結果為何?
+
+     01. boolean result;
+     02. int i=1;
+     03. result=1==2 && ++i>=2;
+     04. System.out.println("result="+result+",i="+i);
+
+   A. result=true , i=1
+   B. result=true , i=2
+   C. result=false , i=1
+   D. result=false , i=2
+   E. 編譯失敗
+
+
+4. 程式碼如下，請問最後結果為何?
+    
+      01. int x=1, y=1;
+      02. boolean b=++x>++y;
+      03. System.out.println(b);
+
+
+   A. true
+   B. false
+   C. 編譯失敗
+
+
+5.程式碼如下，請問最後結果如何?
+     
+      01. int x=1 , y=1;
+      02. boolean b=!(x>y)^!(x<y);
+      03. System.out.println(b);
+
+    A. true
+    B. false
+    C. 編譯失敗

@@ -1,0 +1,38 @@
+final class student
+{
+	 final double pi=3.14;
+	 final String Gjun="¥¨¦K¹q¸£ ";
+	 //final int x;
+	 final void show()
+	 {
+		 System.out.println("hello student");
+	 }
+	 
+	
+}
+
+class A //extends student
+{
+	void showa()
+	{
+		student s=new student();
+		
+		System.out.println("hello A");
+	}
+	
+	
+	
+	void test(double pi)
+	{
+		//this.pi=pi;
+		//System.out.println("pi="+this.pi);
+	}
+
+}
+
+class B //extends student
+{
+
+
+}
+

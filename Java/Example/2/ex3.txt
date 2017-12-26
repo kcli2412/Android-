@@ -1,0 +1,51 @@
+class ex3
+{
+	public static void main(String args[])
+	{
+		int Chinese=98;
+		
+		//Chinese=Chinese+10;
+		Chinese+=10;
+		System.out.println("Chinese="+Chinese);
+		
+		//Chinese=Chinese-10;
+		Chinese-=10;
+		System.out.println("Chinese="+Chinese);
+		
+		//Chinese=Chinese*10;
+		Chinese*=10;
+		System.out.println("Chinese="+Chinese);
+		
+		//Chinese=Chinese/10;
+		Chinese/=10;
+		System.out.println("Chinese="+Chinese);
+		
+		//Chinese=Chinese%10;
+		Chinese%=10;
+		System.out.println("Chinese="+Chinese);
+		
+		/*
+		int x=10;
+		System.out.println("x"+x);
+		int y=3;
+		x=x+20;
+		System.out.println("x"+x);
+		*/
+		/*
+		System.out.println("x+y="+(x+y));
+		System.out.println("x-y="+(x-y));
+		System.out.println("x*y="+(x*y));
+		System.out.println("x/y="+((float)x/y));
+		System.out.println("x%y="+(x%y));
+		*/
+		
+		
+	
+	
+	
+	}
+
+
+
+
+}
