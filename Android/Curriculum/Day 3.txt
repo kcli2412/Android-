@@ -1,0 +1,16 @@
+一.課程講解
+1).Git 版本控制系統
+   1.Git https://git-scm.com/
+   2.TortoiseGit https://tortoisegit.org/
+     & Language Packs 
+   3.安裝 Git/TortoiseGit/Language Packs
+   4.設定名稱/電郵/語系
+     桌面->右鍵->TortoiseGit->設定->重啟首次啟動精靈
+     桌面->右鍵->TortoiseGit->設定->語系
+
+2).Git 操作
+   1.建立Git 版本庫
+
+
+
+/*------2017/12/26------*/
