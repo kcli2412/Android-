@@ -1,0 +1,96 @@
+package javaEx;
+interface buttonlisten
+{
+	void onClick();
+	void DbClick();
+	void Move();
+	void MoveUp();
+	void Movedown();
+}
+
+public class ex3 {
+
+	
+	
+	
+	public static void main(String[] args) {
+		
+		new buttonlisten()
+		{
+
+			@Override
+			public void onClick() {
+				System.out.println("ok , hello");
+				
+			}
+
+			@Override
+			public void DbClick() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void Move() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void MoveUp() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void Movedown() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			
+		}.onClick();
+		
+		
+		/*buttonlisten b1=new buttonlisten() 
+		{
+
+			@Override
+			public void onClick() {
+				System.out.println("ok");
+				
+			}
+
+			@Override
+			public void DbClick() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void Move() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void MoveUp() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void Movedown() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			
+		};
+		b1.onClick();
+		b1.DbClick();*/
+	}
+	
+	
+
+}
