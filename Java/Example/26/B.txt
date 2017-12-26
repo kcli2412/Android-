@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.s2;
+import com.s1.school;
+public class B extends school{
+    
+    private int excel;
+    
+    public B(String name,int chi, int eng, int excel)
+    {
+        super(name,chi,eng);
+        this.excel=excel;
+    }
+
+    public int getExcel() {
+        return excel;
+    }
+
+    public void setExcel(int excel) {
+        this.excel = excel;
+    }
+    
+    public int getSum()
+    {
+        return getChi()+getEng()+getExcel();
+    }
+    
+}

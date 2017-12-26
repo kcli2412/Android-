@@ -1,0 +1,51 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.s1;
+
+/**
+ *
+ * @author Student
+ */
+public class school {
+    private String name;
+    private int chi;
+    private int eng;
+    
+    public school(String name,int chi,int eng)
+    {
+        this.name=name;
+        this.chi=chi;
+        this.eng=eng;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getChi() {
+        return chi;
+    }
+
+    public void setChi(int chi) {
+        this.chi = chi;
+    }
+
+    public int getEng() {
+        return eng;
+    }
+
+    public void setEng(int eng) {
+        this.eng = eng;
+    }
+    
+    
+    
+    
+}

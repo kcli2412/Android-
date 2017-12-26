@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=BIG5"
+    pageEncoding="BIG5"
+    import="com.s2.A"
+    import="com.s2.B"
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	A a=new A("aa",74,85,95);
+	B b=new B("ww",85,96,96);
+	
+	out.println("A-->"+a.getSum()+"<br>");
+	out.println("B-->"+b.getSum());
+
+
+
+
+%>
+
+</body>
+</html>
