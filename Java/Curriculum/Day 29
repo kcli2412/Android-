@@ -1,0 +1,36 @@
+﻿一.課程講解
+1.Android
+  1).UI->XML(排版,Html)
+  2).Activity
+     A.@override要注意.
+     B.onCreate()->同main()一樣.
+  3).內部類別用很多,繼承較少.
+2.Java
+  1).seesion=>Tomcat->Servlet API->HttpSession
+     A.setAttribute
+     B.getAttribute
+
+二.使用專案 pcschool
+  
+  
+  
+三.建立 Mobile 版面設計
+A.Mobile 內容
+  1.簡介
+    1).學員
+  2.學員
+    1).A班
+    2).B班
+    回上一頁
+  3.A班
+    1).新增
+    2).查詢
+  4.B班
+    1).新增
+    2).查詢
+B.Mobile 網站
+  1.DreamWeaver->網站->新增網站->Mobile
+
+
+
+/*------2017/12/25------*/
