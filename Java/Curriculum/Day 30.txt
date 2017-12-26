@@ -1,0 +1,35 @@
+一.課程講解:
+1).JAava=>803i->804=>證照(Java7)
+   1.官網重點
+   2.猛虎=>API
+   3.教材=>100+275
+   Web=>JSP/Servlet
+   framework=>Spring Struts2 Hibernate 
+   框架       (JSP + Java)
+
+2).Android:
+   1.作品:上網看別人的作品.
+   2.APP:自己多練習寫各種APP.
+   3.內部類別->匿名類別
+     寫在 main/其他方法.
+
+3).803/804考試:
+   1.ORACLE->訓練->考試->所有考試->Java與中介軟體-Java SE=>803/804->Review Exam Topics->TOPICS
+     803:String class
+     804:背API
+
+4).大數據->爬蟲軟體
+
+二.Java 內部類別->匿名類別:
+1).練習 interface
+   1.add ex2.java
+   2.interface book
+
+2).模擬 Button 操作功能:
+   1.add ex3.java
+   2.interface buttenlisten
+   3.參考Java計算機
+
+
+
+/*------2017/12/26------*/
