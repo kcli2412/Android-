@@ -1,0 +1,53 @@
+一.DD2017122701
+1.介面內容
+  輸入欄位
+  +
+  輸入欄位
+  按鍵(=)
+  文字欄位
+2.activity_main.xml加入UI元件
+  1).Text->Number
+  2).Text->TextView
+  3).Widgets->Button
+  4).Button->onClick
+3.推送到GitHub
+  1).VCS->Import into Version Control->Shore Project on GitHub
+  2).New repository name:DD2017122702
+4.Clone GitHub
+  1).File->New->Project from Version Control->GitHub
+  2).Git Repository URL:https://github.com/Shaojung/DD2017122701.git
+  3).Add on GitHub=>NO
+
+二.DD2017122702
+1.app->manifests->AndroidManifest.xml
+2.Gradle Scripts->build.gradle
+3.app->res(資源檔)
+  注意命名規則(小寫/-/數字).
+4.加入圖檔
+  app->res->drawable=>flower.jpg
+  activity_main.xml->Images->ImageView=>flower.jpg
+5.R.java
+  Project-DD2017122702->app->build->generated->source->r->debug-com.example.student.dd2017122702->R.java
+  R 壞掉了=>res資料夾有問題(res無法轉檔)
+6.res-drawable/layout/mipmap/values
+  1).限定符 & 國際化=>values & drawable 可以設定地區資料夾
+     Project->DD2017122702->app->src->main->res
+     drawable也可以設定國際化
+7.尺寸
+  1).1dp=1/160 inch(英吋)
+  2).1sp=1/160 inch
+     調整手機裡面的文字尺寸大小時會有改變.
+8.屏幕分辨率
+9.Layout
+  直式/橫式畫面排版
+10.res\raw
+11.建立 APK
+   Build->Build APK(s)=>locate or analyze
+
+三.課程講解
+1.Apk Extractor
+2.Map=>Key/Vaule
+
+
+
+/*------2017/12/27------*/
