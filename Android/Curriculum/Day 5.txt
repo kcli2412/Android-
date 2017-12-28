@@ -1,0 +1,21 @@
+一.Layout 元件介紹
+1.ConstraintLayout:元件與元件之間的互動關係
+2.TextView:
+  1).可利用textAppeara選擇字型直接設定欄位尺寸.
+  2).黃色驚嘆號:string TextView, should use '@string' resource=>字串應該要到values->strings.xml設定再使用.
+  3).ID:可以空白,但是程式會無法呼叫修改.
+3.Button:
+  1)onClick=>click1=>修改TextView的內容.
+
+二.Intent 意圖 教學
+1.UI介面
+  1).第一頁加按鍵跳到第二頁,第二頁按下Back回第一頁.
+  2).第一頁加輸入框將內容帶到第二頁,第二頁顯示第一頁的內容.
+  3.)第三頁加輸入框/Cancel按鍵/Okay按鍵,將內容帶回第一頁.
+
+
+
+
+
+
+/*------2017/12/28------*/
