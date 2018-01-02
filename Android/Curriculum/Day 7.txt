@@ -1,0 +1,48 @@
+一.Layout
+1.Include & Merge
+
+二.畫面元件
+1.TextView
+  1).View為父類別.
+  2).Attribures->layout_width=>match_constraint.
+                             =>wrap_content.
+               ->layout_heught
+2.CheckedTextView
+  1).不是打勾使用的,是列出給使用者看的.
+  2).->checkMark
+  3).->checked
+3.Text 列表
+  Text->EditTest->inputType 的名稱不同.
+  1).Plain Text
+  2).Password
+  3).Password(Numeric)
+  4).Design->Attributes->layout_width=>match_constraint
+     Text->EditText->layout_width=0dp
+                   ->layout_marginStart=8dp
+                   ->layout_marginEnd=8dp
+4.Button
+  1).onClick=>click1(靜態指定)
+  2).Toast.markText(MainActivity.this, Test1, Toast.LENGHT_SHORT).show();
+  3).add Button2 onClick=>click1
+     不同按鍵可以呼叫相同的class,再以R.id.*做辨別.
+  4).add Button3
+     用程式碼加入 MyListener Class 繼承 View.onClickListener 監聽onClick再執行程式.
+5.ToggleButton
+  1).add ToggleButton =>setOnClickListener
+  2).isisChecked
+  3).add button =>clickCheck =>Toast.show
+6.Switch
+  1).add Switch =>setOnClickListener
+  2).isisChecked
+7.CheckBox
+  1).add CheckBox =>setOnCheckedChangeListener
+  2).isChecked
+
+三.課程講解
+1.Google MAP API
+2.手機定位原理
+3.Open Data
+
+
+
+/*------2018/1/2------*/
