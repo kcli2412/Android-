@@ -1,0 +1,69 @@
+一.畫面元件
+1.RadioButton & RadioGroup
+  1).add 3 RadioButtio and 1 RadioGroup
+  2).add Button=>click1
+  3).RadioGroup->getCheckRadioButtonId.
+2.ProgressBar
+  1).add ProgressBar
+  2).add Switch
+  3).Switch=>setOnCheckChangeListener
+  4).ProgressBar->setVisibility
+3.ProgressBar執行3秒後自動停止消失
+  1).ProgressBar->setVisibility
+  2).new Thread().start()
+     Thread->run => Thread.sleep(3000)
+                 => runOnUiThread->run => ProgressBar.setVisibility
+4.ProgressBar(Horizontal)
+  1).add ProgressBar
+  2).add 2 Button =>click3 (-10) & =>click4 (+10)
+  3).ProgressBar.setProgress 
+5.SeekBar
+  1).add SeekBar
+  2).add TextView
+  3).SeekBar=>setSeekBarChangeListener ->onProgressChanged
+6.SeekBar(Discrete)
+  1).add SeekBar(Discrete)
+7.RatingBar
+  1).add RatingBar
+  2).rating(float 0.5)
+8.ImageView
+  1).add flower.jpg
+  2).add ImageView
+  3).ImageView add drawable/flower.jpg
+  4).add Button
+  5).ImageView->setImageResource()
+9.Picasso Image 載入網路圖片
+  1).Picasso http://square.github.io/picasso
+  2).Gradle Scripts->buld.gradle
+     => compile 'com.squareup.picasso:picasso:2.5.2'
+  3).add Button =>click1
+     => Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(imageView);
+  4).maniffest => <uses-permission android:name="android.permission.INTERNET"/>
+     開啟 INTERNET 權限
+10.ImageButton
+   1).add ImageButton add Image
+   2).ImageButton->background->Color->transparent(透明色) or #00000000
+11.WebView
+   1).add WebView
+   2).setWebViewClient(new WebViewClient())
+   3).loadUrl(http://tw.yahoo.com)
+   4).maniffest => <uses-permission android:name="android.permission.INTERNET"/>
+   5).getSettings().setJavaScriptEnabled(true)
+   6).setWebChromeClient(new WebChromeClient())
+   7).loadData(data, "text/html; charset=UTF-8", null)
+12.WebView 讀取內部網頁
+   1).add WebView
+   2).File->New->Folder->Assets Folder=>assets
+   3).add index.html
+   4).add flower.jpg
+   5).loadUrl("file:///android_asset/index.html");
+
+二.課程講解
+1.Open Source->GitHub
+2.COSCUP
+3.KKTIX
+4.JSDC
+
+
+
+/*------2018/1/3------*/
