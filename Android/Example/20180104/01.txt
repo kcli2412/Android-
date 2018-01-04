@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package t2018010401;
+
+/**
+ *
+ * @author Student
+ */
+public class T2018010401 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Dog mypet = new Dog();
+        mypet.age = 5;
+        mypet.bark();
+    }
+    
+}
+class Mammal
+{
+    int age;
+}
+class Dog extends Mammal
+{
+    public void bark()
+    {
+        System.out.println("Woof!! Woof!!");
+    }
+}
+class Cat extends Mammal
+{
+    
+}
