@@ -1,0 +1,46 @@
+一.畫面元件
+1.自行建立 ContentView
+  1).New Project
+  2).add Button
+  3).setContentView
+2.用程式寫 Layout
+  1).add LinearLayout
+  2).add Button
+  3).layout.addView(btn)
+  4).setContentView(layout)
+  5).layout.setOrientation()
+3.ListView
+  1).add ListView
+  2).add String[]
+  3).add ArrayAdapter(context, resource, objects)
+  4).lv.setAdapter(adapter)
+  5).lv.setOnItemClickListener()
+4.Spinner
+  1).add Spinner
+  2).add ArrayList
+  3).add ArrayAdapter
+  4).spinner.setAdapter(adapter)
+  5).spinner.setOnItemSelectedListener()
+  6).add TexeView,下拉Spinner時,顯示選擇的Item.
+  7).add Button,TextView,按下按鍵顯示目前的Item.
+  8).add EditView,Button,增加/刪除Spinner內容.
+  9).adapter.notifyDatSetChanged()
+  10).add new Spinner.
+  11).add res->values->strings => String Array
+  12).Attributes->entries =>@array/cities
+  13).getResources().getStringArray(R.array.cities)
+
+二.JAVA複習
+1.NetBeans->new project
+2.new class extends Mammal
+
+三.課程講解
+1.PhoneGap -> Adobe PhoneGap Build
+2.jQuery Mobile
+3.Facebok/OurApp/好市多APP -> 網頁型/混和型APP
+4.APP Review - App Store
+5.Open Source 有條款限制.
+
+
+
+/*------2018/1/4------*/
