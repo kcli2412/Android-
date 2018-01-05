@@ -1,0 +1,43 @@
+一.畫面元件
+1.AlertDialog
+  1).add Button=>click1
+     add AlertDialog.Builder
+         ->setTitle
+         ->setMessage
+     ->setPositiveButton
+     ->setNegativeButton
+     ->setNeutralButton
+  2).add Button=>click2
+     add EditText & TextView
+     td->setText(tv.getText())
+  3).add Button=>click3
+     add String[] fruits & TextView
+     ->setItems
+     ->setCancelable(false)
+     ->setNegativeButton
+  4).add Button=>click4
+     add String[] fruits & TextView
+     ->setSingleChoiceItems
+     ->setPositiveButton
+     ->setNegativeButton
+  5).add Button=>click5
+     add String[] & TextView
+     ->setMultiChoiceItems
+     ->setPositiveButton
+     ->setNegativeButton
+     add boolean
+     add StringBuilder
+  6).add Button=>click6
+     add Layout
+         add TextView & Buttton
+     LayoutInflater inflater = LayoutInflater.from()
+     View v1 = inflater->inflate
+     btn.setOnClickListener     
+
+二.課程講解
+1.UX - 車用導航 Garmin/Mio
+     - 蝦皮/Yahoo/PChome
+
+
+
+/*------2018/1/5------*/
