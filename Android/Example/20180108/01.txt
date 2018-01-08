@@ -1,0 +1,57 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package t2018010401;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Student
+ */
+public class T2018010401 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        HashMap m1 = new HashMap();
+        m1.put("name", "Bob");
+        m1.put("score", 95);
+        System.out.println(m1.get("name"));
+        HashMap m2 = new HashMap();
+        m2.put("name", "Mary");
+        System.out.println(m2.get("name"));
+        
+    }
+    
+}
+class Mammal
+{
+    int age;
+    public void say()
+    {
+        System.out.println("Speaking!!");
+    }
+}
+class Dog extends Mammal
+{
+    @Override
+    public void say()
+    {
+        System.out.println("Woof!! Woof!!");
+    }
+    
+}
+class Cat extends Mammal
+{
+    @Override
+    public void say()
+    {
+        System.out.println("Meow!!");
+    }
+}
