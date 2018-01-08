@@ -1,0 +1,74 @@
+一.畫面元件
+1.AutoCompleteTextView 
+  1).add AutoCompleteTextView act=new
+     add String str[]
+     add ArrayAdapter<String> adapter=new ArrayAdapter<String>(context, resource, objects)
+     ->setThreshold
+     ->setAdapter
+2.ListView
+  1).add ListView
+     add ArrayList<Map<String,String>> mylist
+     add HashMap<String, String> m1/m2/m3
+     m1.put("city","台北")
+     m1.put("code","02")
+     mylist.add(m1)
+     SimpleAdapter adapter=new SimpleAdapter(context, data, resource, from, to)
+                   android.R.layout.simple_list_item_2
+     ->setAdapter
+  2).add Layout
+         add 2 TextView
+     add HashMap<String, String> m4
+     SimpleAdapter adapter=new SimpleAdapter(context, data, resource, from, to)
+                   R.layout.layout1
+  3).Layout add ImageView
+     ArrayList<Map<String, Object>> mylist
+     add image -> res/drawable
+     m1.put("image", R.drawable.tpe)
+     SimpleAdapter adapter=new SimpleAdapter(context, data, resource, from, to)
+3.List/BaseAdapter
+  1).add ListView
+     add class MyAdapter extends BaseAdapter
+               -> getCount return 5
+               -> getView add TextView
+                              setText
+                          return tv
+     ->setAdapter
+   2).add Sttring str[]
+      Myadapter -> getCount return str.length
+                -> getView setText(str[position])
+   3).add Layout
+          add TextView
+      Myadapter -> getView
+                   LayoutInflater inflater = LayoutInflater.from()
+                   View v=inflater.inflater
+                   tv=v.findViewById
+                   return v
+   4).Layout add TextView & ImageView
+      add image -> res/drawable
+      ArrayList<Map<String, Object>> mylist
+      m1.put("city","台北")
+      m1.put("code","02")
+      m1.put("image", R.drawable.tpe)
+      mylist.add(m1)
+      Myadapter -> getCount return mylist.size
+                -> getView
+                   tv2 = findVieWById
+                   img = findViewById
+                   img.setImageResource
+   5).add CheckBox
+      add HashMap<String, String> m5/m6/m7/m8
+      add boolean chks[8]
+      add Button -> click1
+                    StringBuilder sb=new
+                                  sb.append()
+
+二.JAVA複習
+1.HashMap
+  1).HashMap m1=new HashMap()
+     m1.put
+  2).ArrayList<Map> mylist=new ArrayLait()
+     mylist.add()
+
+
+
+/*------2018/1/8------*/
