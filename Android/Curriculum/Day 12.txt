@@ -1,0 +1,54 @@
+一.畫面元件
+1.ListView/BaseAdapter
+  1).new MyAdapter.java
+         add ArrayList<Map<String, Object>> mylist
+         add boolean chks[]
+         Context context
+         MyAdapter(Context context, ArrayList<Map<String, Object>> mylist)
+
+     delete MainActivity.java->MyAdapter()
+            MyAdapter adapter = new MyAdapter(MainActivity.this, mylist);
+  2).資源回收利用
+     add static class ViewHolder
+     set ViewHolder -> v.setTag
+     get ViewHolder -> v.getTag
+     chockbox -> setOnCheckedChangeListener(null)
+     MyAdapter(Context context, ArrayList<Map<String, Object>> mylist, boolean chks[])
+  3).RecyclerView / 自行研究
+2.Menu
+  1).->onCreateOptionsMenu
+      menu.add
+    ->onOptionsItemSelected
+      item.getTitle().equals
+  2).menu.add(int var1, int var2, int var3, CharSequence var4)
+     onOptionsItemSelected => switch (item.getItemId())
+  3).add res.menu folder
+     add res.menu.mymenu.xml
+     add 2 MenuItem
+     onCreateOptionsMenu -> getMenuInflater().inflate
+     Attributes->item->icon
+     Attributes->item->showAsAction
+3.Notification
+  1).new Project
+     add Button->click1
+     Gradle Scripts->build.gradle->android->defaultConfig->minSdkVersion => 26
+     add NotificationChannel channeLove = new
+     add NotificationManamge nm = getSystemService
+     nm.createNotificationChannel
+     add Notification.Builder builder = new
+       .setContentTitle
+       .setContentText
+       .setSmallIcon
+     add Notification notify
+     nm.notify
+
+
+
+
+二.課程講解
+1.專題名稱和畫面流程.
+
+
+
+
+/*------2018/1/9------*/
