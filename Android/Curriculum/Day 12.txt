@@ -38,9 +38,15 @@
      add Notification.Builder builder = new
        .setContentTitle
        .setContentText
-       .setSmallIcon
+       .setSmallIcon(R.drawable.ic_launcher_foreground)
      add Notification notify
      nm.notify
+  2).Gradle Scripts->build.gradle->android->defaultConfig->minSdkVersion => 21
+     add regChannel() => @TargetApi(Build.VERSION_CODE.O) (版本在26才會執行)
+     Build.VERSION.SDK_INT >= 26
+     Tools->Android->AVD Manager->Create Virtual Device -> API Level 23
+     .setSmallIcon(R.mipmap.ic_launcher)
+  3).
 
 
 

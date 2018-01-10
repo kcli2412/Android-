@@ -1,0 +1,35 @@
+一.畫面元件
+
+1.Notification(DD2018010902)
+  1).add Button->click2
+         nm.cancel
+
+2.Thread
+  1).New Project
+     add SeekBar
+     add Handler handler=new
+     add class MyThread->run
+               while(true)
+               Thread.sleep(1000)
+               handler.post(new Runnable->run)
+                                tv.setText
+     add MyThread t=new
+     t.start
+  2).Runnable r=new
+              handler.postDelayed
+     handler.post(r)
+
+
+
+3.Message
+  1).
+
+
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/10------*/
