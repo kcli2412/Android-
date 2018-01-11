@@ -1,0 +1,51 @@
+一.畫面元件
+1.上網(DD2018011004)
+  1).add res->menu->main_menu.xml
+         add Menu Item
+                  title=>Reload
+                  id=>menu_reload
+                  icon=>
+      ->onCreateOptionsMenu
+        getMenuInflater().inflate
+      ->onOptionsItemSelected
+      add ListView lv
+      Thread->run->runOnUiThread->run
+              ArrayAdapter adapter=new
+              lv.setAdapter
+  2).add DetailActivity
+         Intent it
+                ->getStringExtra
+         add WebView wv
+             ->setWebChromeClient
+             ->getSettings.setJavaScriptEnabled
+             ->loadUrl
+     lv->setOnItemClickListener->onItemClick
+         Intent it=new
+                it->putExtra
+         startActivity
+  3).new layout myitem.xml
+         add ImageView & 2 TextView
+     new class MyAdapter extends BaseAdapter
+         add class ViewHolder
+             add 2 TextView & ImageView
+     new Mobile01NewsItem
+         add String title/link/imgurl/description
+     ArrayList<Mobile01NesItem> newsItem=new
+     Mobile01NewsItem item
+     String data[]=new String[dataHandler.newsItem.size]
+  4).add boolean isDescription
+     switch(qName)
+  5).
+         
+
+
+
+
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/11------*/
