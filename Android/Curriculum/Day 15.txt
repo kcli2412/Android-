@@ -1,0 +1,16 @@
+一.畫面元件
+1.下載網頁資料
+  1).下載網頁
+     Transmitting Network Data Using Volley
+     compile 'com.android.volley:volley:1.1.0'
+  2).JSON的簡單解法
+  3).取出每一個Object的資料
+  4).用Gson取資料
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/12------*/
