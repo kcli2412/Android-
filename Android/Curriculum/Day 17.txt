@@ -1,0 +1,32 @@
+一.
+1.儲存檔案在手機的方法
+  A.SharedPreferences (讀取預設的SharedPreference)
+  1).new Activity->Settings Activity
+         ->Hierarchical Parent=>MainActivity
+     SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences
+2.File儲存&讀取
+  1).new Project & Button
+     ->getFilesDir
+     ->getCacheDir
+  2).File f
+     FileWriter fw
+       ->write
+  3).
+
+
+二.Firebase
+1.安裝Firebase
+  1).Google Devel
+
+
+三.Firebase 推播
+
+
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/16------*/
