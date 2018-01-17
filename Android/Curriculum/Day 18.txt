@@ -1,0 +1,42 @@
+一.專案-Android Unit Test的用法
+1.app->java->dd2018011701(test)
+  1).new Project(2018011701)
+     add test1 & test2
+         ->assertEquals
+     add MyTest1->getAdd
+
+2.ORM & DAO
+1.NetBeans new Project(2018011702)
+  1).new class Student
+     new class StudentScoreDAO
+         ->add
+         ->getList
+     StudentScoreDAO dao=new
+     dao.add
+     dao.getList
+2.Android Studio(2018011701)
+  1).new package data
+     new class Student & StudentScoreDAO
+     =>add(Student)
+     =>getList
+     =>getStudent(int id)
+     =>update(Student)
+     =>delete(int id)
+  2).ExampleUnitTest 
+     
+
+
+
+
+二.
+
+
+
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/17------*/
