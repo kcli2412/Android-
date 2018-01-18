@@ -1,0 +1,29 @@
+一.
+1.DD2018011701
+  1).Delete
+     MainActivity.dao.delete
+     AlertDialog
+  2).Edit
+     new EditActivity
+     add TextView & 2 EditText
+     add 2 Button clickBack & clickUpdate
+       ->MainActivity.dao.update
+     DetailActivity->onResume
+  3).SaveFile & Load
+     new class StudentFileDAO
+
+
+
+
+二.
+
+
+
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/18------*/
