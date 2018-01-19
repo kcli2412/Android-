@@ -1,0 +1,41 @@
+一.
+1.DD2018011901
+  1).Fragment
+     new File->New->Fragment->Fragment FargmentA
+     new File->New->Fragment->Fragment FargmentB
+         add TextView
+     delete onAttach-> if()else(){} 內容先刪除,目前沒用到.
+     MainActivity add FargmentA & FargmentB
+  2).Fargment => onActivityCreated
+     FargmentA add Button
+                   Button button = (Button) getActivity().findViewById(R.id.button);
+                   =>setOnClickListener
+                     =>onClick
+                       tv.setText("Hello World");
+2.DD2018011902
+  1)Tabbed Activity
+    new File->New->Activity->Tabbed Activity->Navigation Style=>Action Bar Tabs
+    add Tab
+    MainActivity->getCount => 4
+    activity_main tabs=>tabItem
+3.DD2018011903
+  1).Navigation Drawer Activity
+     new File->New->Activity->Navigation Drawer Activity
+4.DD2018011904
+  1).
+
+
+
+
+二.
+
+
+
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/19------*/
