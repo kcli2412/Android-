@@ -1,0 +1,62 @@
+一.
+1.new DD2018012201
+  1).SQLite安裝
+     DB Browser for SQLite安裝
+     http://sqlitebrowser.org/
+  2).新增資料庫
+     new student table
+     _id INT PK
+     name text
+     score INT
+  3).new raw Directory to app->res
+     Paste student
+  4).add Button click1
+     File dbFile=new File(getFilesDir(),"student.db")
+     InputStream is=getResources().openRawResource(R.raw.student)
+     OutputStream os=new FileOutputStream(dbFile)
+     int r
+     while((r=is.read())!=-1)
+     os.write(r)
+2.SQLite 查詢
+  1).File dbFile=new File(getFilesDir(),"student.db"
+     SQLiteDatabase db = SQLiteDatabase.openDatabase(
+       dbFile.getAbsolutePath(),null,SQLiteDatabase.OPEN_READWRITE
+     Cursor c=db.rawQuery("Select * from students", null
+     c.moveToFirst
+     c.moveToNext
+  2).String strDql="Select * from students where _id=?"
+     Cursor c=db.rawQuery(strSql, new String[]{"2"}
+  3).Cursor c=db.query("students",new String[]{"2"}
+  4).Cursor c=db.query("students",new String[]{"_id","name","score"},null,null,null,null,null)
+  5).Cursor c=db.query("students",new String[]{"_id","name","score"},"_id=?",new String[]{"2"},null,null,null)
+3.SQLite新增
+  1).db.execSQL("Insert into students('_id','name','score')Values(3,'Bob',95)")
+  2).ContentValues cv=new ContentValues
+     cv.put("_id",4)
+     cv.put("name","Mary")
+     cv.put("score",90)
+     db.insert("students",null,cv)
+
+
+二.new DD2018012202
+1.新增資料庫
+  1).new class MyHelper Superclass: android.database.sqlite.SQLiteOpenHelper
+     ->onCreate
+       =>sqLiteDatabase.execSQL("CREATE TABLE `students` ( `_id` INTEGER, `name` TEXT, `score` INTEGER, PRIMARY KEY(`_id`) )")
+     ->onUpgrade
+     =>MyHelper
+       String DB_NAME="student.sqlite"
+       int VERSION=1
+
+三.DD2018011701
+1.
+
+
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/22------*/
