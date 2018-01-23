@@ -1,0 +1,21 @@
+一.Firebase Cloud(DD2018011701)
+1.add Firebase Connect 1/2/3(新的data要記得開權限)
+  new class StudentCloudDAO
+  save->myRef=database.getReference("scores")
+  load->myRef.addValueEventListener
+2.load cloud要即時顯示
+  new refresData
+        studentNames.clear()
+        adapter.notifyDataSetChanged
+
+
+
+
+
+
+二.課程講解
+
+
+
+
+/*------2018/1/23------*/
